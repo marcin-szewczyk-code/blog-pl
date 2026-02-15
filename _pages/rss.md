@@ -9,8 +9,8 @@ Ten blog ma kanał **RSS (Atom)**, który możesz dodać do czytnika (np. Feedly
 
 W ten sposób możesz otrzymywać informacje o nowych wpisach na tym blogu:
 
-- Adres kanału: /feed.xml
-- Możesz też po prostu otworzyć feed: [Otwórz feed.xml](/feed.xml)
+- Adres kanału: {{ '/feed.xml' | relative_url }}
+- Możesz też po prostu otworzyć feed: [Otwórz feed.xml]({{ '/feed.xml' | relative_url }})
 
 > Po otwarciu zobaczysz plik XML – to normalne. Kanał jest przeznaczony dla czytników RSS, a nie do bezpośredniego czytania w przeglądarce.
 
@@ -31,5 +31,5 @@ Rozwiązanie to jest szczególnie przydatne w przypadku mniejszych, niezależnyc
 
 Poniżej przykład, jak wygląda kanał RSS tego bloga w aplikacji RSS na iPhone:
 
-![Widok kanału RSS bloga w czytniku na iPhone](/assets/pages/rss/rss-feed-in-app.jpg)
+![Widok kanału RSS bloga w czytniku na iPhone]({{ 'assets/pages/' | append: page.post_id | append: '/rss-feed-in-app.jpg' }})
 ***Rys. 1.** Widok kanału RSS bloga w czytniku na iPhone.*
