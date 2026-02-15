@@ -76,6 +76,8 @@ meta: "Powered by :PLATFORM · Motyw: :THEME · :PRIVACY"
 copyright:
   author: Autor
   license: Licencja
+  brief: Wszelkie prawa zastrzeżone.
+  verbose: Wszelkie prawa zastrzeżone.
 
 button:
   copy: Kopiuj
@@ -94,8 +96,3 @@ date:
   long: "%d %B %Y"
   short: "%d.%m.%Y"
 
-pwa:
-  update:
-    message: Dostępna jest nowa wersja treści.
-    button: Aktualizuj
-    

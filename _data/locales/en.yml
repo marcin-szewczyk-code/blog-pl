@@ -5,3 +5,8 @@
 
 
 meta: "Powered by :PLATFORM · Theme: :THEME · :PRIVACY"
+
+copyright:
+  brief: All rights reserved.
+  verbose: All rights reserved.
+  
