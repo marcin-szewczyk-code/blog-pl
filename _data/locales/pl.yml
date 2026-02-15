@@ -91,7 +91,8 @@ tooltip:
 
 notification:
   update_available: Dostępna jest nowa wersja
-
+  update: "Aktualizuj"
+  
 date:
   long: "%d %B %Y"
   short: "%d.%m.%Y"
