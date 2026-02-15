@@ -21,7 +21,7 @@ Czego potrzebujemy na początek i jak to wygląda u mnie:
 - **GitHub repo URL**: [https://github.com/marcin-szewczyk-code/marcin-szewczyk-code.github.io](https://github.com/marcin-szewczyk-code/marcin-szewczyk-code.github.io)
 - **URL techniczny (GitHub Pages)**: [https://marcin-szewczyk-code.github.io/](https://marcin-szewczyk-code.github.io/)
 - **Site URL (custom domain, ustawiony w DNS u operatora domeny)**: [https://blog.marcinszewczyk.net/](https://blog.marcinszewczyk.net/)
-- **Pages type**: user page (GitHub Actions dla repo na GitHubie)
+- **Pages type**: User Page (GitHub Actions dla repo na GitHubie)
 
 Mając konto na GitHubie tworzymy tam repo `marcin-szewczyk-code.github.io`, potem wgrywamy do niego szablon startowy `Chirpy`.
 
@@ -116,22 +116,3 @@ repo + lokalnie → config + post → serwer lokalny + commit&push (GitHub) → 
 gdzie commit&push do repozytorium uruchamiają automatyczny build&deploy w GitHub Pages.
 
 Robię → działa → jest fajnie.
-
-
-<!--
->```python
-#print("Hello world")
-#```
--->
-
-<!--
-EN:
-
-I made a blog, so the question came up what to write so the blog has a post.
-A natural idea is to describe how to make a blog.
-
-This blog was created when I went to lunch with an IT guy and an automation engineer joined us. It was a nice conversation. I learned that there is something called Jekyll and that it is great. I set it up, added the Chairy theme and some automation in Python.
-
-I bought a domain, created a repo on GitHub and published everything.
-And that’s how it was created. The blog is built from markdown, pushed to git from VS Code. It is static and that is great. I make a commit and push and it works great. I will be able to change the theme if I like another one, because all the content is written in markdown. I wonder if I will post here in my free time. Below I describe how to run it.
--->
