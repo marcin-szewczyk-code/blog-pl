@@ -12,7 +12,7 @@
 #url: "https://marcin-szewczyk-code.github.io"
 #baseurl: "/blog-pl"
 
-url: "https://en.blog.marcinszewczyk.net"
+url: "https://blog.marcinszewczyk.net"
 baseurl: ""
 
 future: true
@@ -25,7 +25,7 @@ theme: jekyll-theme-chirpy
 # The language of the webpage › https://www.lingoes.net/en/translator/langcode.htm
 # If it has the same name as one of the files in folder `_data/locales`, the layout language will also be changed,
 # otherwise, the layout language will use the default value of 'en'.
-lang: en
+lang: pl
 
 # Change to your timezone › https://zones.arilyn.cc
 timezone: "Europe/Warsaw"
@@ -34,8 +34,8 @@ timezone: "Europe/Warsaw"
 # ↓ --------------------------
 
 title: "Marcin Szewczyk"
-tagline: "Code, mathematics, simulations." # it will display as the subtitle
-description: Notes on programming, mathematics, and building a blog with Jekyll. # used by seo meta and the atom feed
+tagline: "Notatki i zapiski. Kody, matematyka, symulacje." # it will display as the subtitle
+description: Notatki i zapiski o programowaniu, matematyce i budowie bloga w Jekyllu. # used by seo meta and the atom feed
 
 #description: >- # used by seo meta and the atom feed
 #  Notatki i zapiski o programowaniu, matematyce i budowie bloga w Jekyllu.

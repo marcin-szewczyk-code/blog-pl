@@ -1,17 +1,17 @@
 ---
-title: "How This Blog Started"
+title: "Jak powstał ten blog"
 date: 2026-02-05 15:00:00 +0100
 categories: [Blog]
 tags: [blog, jekyll, personal]
 pin: true
 ---
 
-I went out for lunch with a software engineer and an automation engineer joined us. It turned into a good conversation. That’s when I learned there’s something called Jekyll – and that it’s great. I set it up for myself, added the Chirpy theme, and wrote a bit of automation in Python.
+Ten blog powstał tak, że poszedłem na obiad z informatykiem i dosiadł się automatyk. Była z tego fajna rozmowa. Dowiedziałem się, że jest coś takiego jak Jekyll i że jest świetny. Skonfigurowałem go sobie, dodałem szablon Chirpy i trochę automatyzacji w Pythonie.
 
-I bought a domain, created a Jekyll-Chirpy repository on GitHub, deployed everything via GitHub Pages, and configured domain redirection. And that’s how it came into existence.
+Kupiłem domenę, stworzyłem repozytorium Jekyll-Chirpy na GitHubie, wystawiłem całość jako GitHub Pages i ustawiłem przekierowanie z domeny. I tak to powstało.
 
-The blog is generated from Markdown, pushed to Git from VS Code. It’s fully static – and that’s the beauty of it. It has useful plugins, like the JavaScript library MathJax for rendering LaTeX. I commit, I push, and it just works. If I ever decide to switch themes, I can – because all the content lives in Markdown.
+Blog powstaje z markdowna, wypychanego do gita z poziomu VS Code. Jest statyczny i to jest super. Ma fajne wtyczki, jak biblioteka JavaScript MathJax do LaTeXa. Robię commit i push i działa to świetnie. Chirpy będę mógł zmienić, jeśli spodoba mi się inne, bo cała treść jest tworzona w markdownie.
 
-This blog is a place for my notes on code, mathematics, and simulations.
+Ten blog to miejsce na moje notatki o kodach, matematyce i symulacjach.
 
-Time will tell whether I keep posting here.
+Ciekaw jestem, czy będę tu umieszczał wpisy w wolnych chwilach.
