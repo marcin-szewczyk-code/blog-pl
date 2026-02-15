@@ -1,5 +1,5 @@
 ---
-title: "Jak powstał ten blog"
+title: "Jak powstał ten blog.."
 date: 2026-02-05 15:00:00 +0100
 categories: [Blog]
 tags: [blog, jekyll, personal]
@@ -14,4 +14,4 @@ Blog powstaje z markdowna, wypychanego do gita z poziomu VS Code. Jest statyczny
 
 Ten blog to miejsce na moje notatki o kodach, matematyce i symulacjach.
 
-Ciekaw jestem, czy będę tu umieszczał wpisy w wolnych chwilach..
+Ciekaw jestem, czy będę tu umieszczał wpisy w wolnych chwilach.
