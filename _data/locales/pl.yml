@@ -94,3 +94,8 @@ date:
   long: "%d %B %Y"
   short: "%d.%m.%Y"
 
+pwa:
+  update:
+    message: Dostępna jest nowa wersja treści.
+    button: Aktualizuj
+    
