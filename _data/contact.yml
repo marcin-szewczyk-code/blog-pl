@@ -25,6 +25,10 @@
   url: https://www.ee.pw.edu.pl/~szewczyk/
   label: Faculty page
 
+#- type: custom
+#  icon: fas fa-language
+#  url: https://en.blog.marcinszewczyk.net
+#  label: EN
 
 #- type: github
 #  icon: "fab fa-github"

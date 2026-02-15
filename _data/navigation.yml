@@ -15,6 +15,12 @@ tabs:
     url: /archives/
     icon: archive
 
+  - title: "PL"
+    url: "/"
+
+  - title: "EN"
+    url: "https://en.blog.marcinszewczyk.net"
+
 bottom:
   - title: About
     url: /about/
