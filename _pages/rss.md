@@ -10,7 +10,7 @@ Ten blog ma kanał **RSS (Atom)**, który możesz dodać do czytnika (np. Feedly
 W ten sposób możesz otrzymywać informacje o nowych wpisach na tym blogu:
 
 - Adres kanału: {{ '/feed.xml' | relative_url }}
-- Możesz też po prostu otworzyć feed: [Otwórz feed.xml]({{ '/feed.xml' | relative_url }})
+- Możesz też po prostu otworzyć feed: Otwórz [feed.xml]({{ '/feed.xml' | relative_url }})
 
 > Po otwarciu zobaczysz plik XML – to normalne. Kanał jest przeznaczony dla czytników RSS, a nie do bezpośredniego czytania w przeglądarce.
 
@@ -25,7 +25,7 @@ Kanał możesz dodać do aplikacji takich jak:
 
 **RSS** (*Really Simple Syndication*) to standardowy format umożliwiający śledzenie aktualizacji stron internetowych w specjalnych czytnikach. Nowe wpisy pojawiają się w nich automatycznie po publikacji.
 
-Rozwiązanie to jest szczególnie przydatne w przypadku mniejszych, niezależnych stron internetowych, które nie korzystają z wbudowanych systemów subskrypcji (np. newslettera czy powiadomień e-mail).
+Rozwiązanie to jest szczególnie przydatne w przypadku **mniejszych, niezależnych stron internetowych**, które nie korzystają z wbudowanych systemów subskrypcji (np. newslettera czy powiadomień e-mail).
 
 ## Jak to wygląda w aplikacji RSS
 
