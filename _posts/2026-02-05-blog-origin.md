@@ -1,5 +1,5 @@
 ---
-title: "Jak powstał ten blog.."
+title: "Jak powstał ten blog"
 date: 2026-02-05 15:00:00 +0100
 categories: [Blog]
 tags: [blog, jekyll, personal]
