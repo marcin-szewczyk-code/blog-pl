@@ -14,4 +14,4 @@ Blog powstaje z markdowna, wypychanego do gita z poziomu VS Code. Jest statyczny
 
 Ten blog to miejsce na moje notatki o kodach, matematyce i symulacjach.
 
-Ciekaw jestem, czy będę tu umieszczał wpisy w wolnych chwilach.
+Ciekaw jestem, czy będę tu umieszczał wpisy w wolnych chwilach..
