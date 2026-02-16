@@ -6,9 +6,7 @@ permalink: /legal/
 
 ## Prawa autorskie i licencja
 
-Ten blog stanowi część długoterminowego projektu autorskiego.
-
-Publikowane treści mogą zostać w przyszłości zredagowane, rozszerzone i wykorzystane w innych formach publikacji, przygotowanych w procesie konwersji źródeł Markdown (np. do formatu LaTeX z wykorzystaniem narzędzi takich jak PyPandoc).
+Ten blog stanowi część długoterminowego projektu autorskiego. Publikowane treści mogą zostać w przyszłości zredagowane, rozszerzone i wykorzystane w innych formach publikacji, przygotowanych w procesie konwersji źródeł Markdown (np. do formatu LaTeX z wykorzystaniem narzędzi takich jak PyPandoc).
 
 Z tego względu przyjęto zachowawczy model licencyjny zapewniający pełną kontrolę autorską.
 
