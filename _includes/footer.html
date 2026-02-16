@@ -9,7 +9,7 @@
 >
   <p>
     {{- '©' }}
-    <time>{{ 'now' | date: '%Y' }}</time>
+    <time>2026–{{ 'now' | date: '%Y' }}</time>
 
     {% if site.social.links %}
       <a href="{{ site.social.links[0] }}">{{ site.social.name }}</a>.
@@ -45,7 +45,7 @@
     {%- endcapture -%}
 
     {%- capture _privacy -%}
-      Analityka: <a href="{{ '/privacy/' | relative_url }}">GA4</a>
+      Analytics: <a href="{{ '/privacy/' | relative_url }}">GA4</a>
     {%- endcapture -%}
 
     <!--

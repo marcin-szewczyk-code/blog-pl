@@ -75,7 +75,8 @@ meta: "Powered by :PLATFORM · Motyw: :THEME · :PRIVACY"
 
 copyright:
   author: Autor
-  license: Licencja
+  license:
+    template: "© Marcin Szewczyk. Wszelkie prawa zastrzeżone."
   brief: Wszelkie prawa zastrzeżone.
   verbose: Wszelkie prawa zastrzeżone.
 
