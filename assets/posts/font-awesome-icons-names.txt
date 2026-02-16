@@ -1,0 +1,198 @@
+# ==== UI / Navigation ====
+fas fa-home
+fas fa-globe
+fas fa-search
+fas fa-bars
+fas fa-times
+fas fa-chevron-up
+fas fa-chevron-down
+fas fa-chevron-left
+fas fa-chevron-right
+fas fa-arrow-up
+fas fa-arrow-down
+fas fa-arrow-left
+fas fa-arrow-right
+fas fa-arrow-circle-up
+fas fa-arrow-circle-down
+fas fa-arrow-circle-left
+fas fa-arrow-circle-right
+fas fa-external-link-alt
+fas fa-link
+fas fa-unlink
+fas fa-sync
+fas fa-redo
+fas fa-undo
+fas fa-expand
+fas fa-compress
+
+# ==== Content / Editing ====
+fas fa-edit
+fas fa-pen
+fas fa-pencil-alt
+fas fa-save
+fas fa-copy
+fas fa-paste
+fas fa-trash
+fas fa-trash-alt
+fas fa-folder
+fas fa-folder-open
+fas fa-file
+far fa-file
+fas fa-file-alt
+far fa-file-alt
+fas fa-file-code
+fas fa-file-download
+fas fa-file-upload
+fas fa-upload
+fas fa-download
+fas fa-print
+
+# ==== Status / Feedback ====
+fas fa-check
+fas fa-check-circle
+far fa-check-circle
+fas fa-times-circle
+far fa-times-circle
+fas fa-info-circle
+fas fa-exclamation
+fas fa-exclamation-circle
+fas fa-exclamation-triangle
+fas fa-question
+fas fa-question-circle
+fas fa-bell
+far fa-bell
+fas fa-bell-slash
+fas fa-lock
+fas fa-unlock
+fas fa-shield-alt
+fas fa-key
+
+# ==== Communication ====
+fas fa-envelope
+far fa-envelope
+fas fa-paper-plane
+fas fa-comment
+far fa-comment
+fas fa-comments
+far fa-comments
+fas fa-phone
+fas fa-mobile-alt
+fas fa-rss
+
+# ==== Development / Tech ====
+fas fa-code
+fas fa-terminal
+fas fa-bug
+fas fa-database
+fas fa-server
+fas fa-microchip
+fas fa-laptop-code
+fas fa-desktop
+fas fa-hdd
+fas fa-cogs
+fas fa-cog
+fas fa-wrench
+fas fa-tools
+fas fa-network-wired
+fas fa-cloud
+fas fa-cloud-download-alt
+fas fa-cloud-upload-alt
+
+# ==== Math / Science ====
+fas fa-calculator
+fas fa-superscript
+fas fa-square-root-alt
+fas fa-atom
+fas fa-flask
+fas fa-brain
+fas fa-infinity
+
+# ==== Time ====
+fas fa-clock
+far fa-clock
+fas fa-calendar
+far fa-calendar
+fas fa-calendar-alt
+far fa-calendar-alt
+fas fa-hourglass
+fas fa-stopwatch
+
+# ==== Media ====
+fas fa-play
+fas fa-pause
+fas fa-stop
+fas fa-forward
+fas fa-backward
+fas fa-volume-up
+fas fa-volume-mute
+fas fa-image
+far fa-image
+fas fa-camera
+fas fa-video
+
+# ==== Layout ====
+fas fa-list
+fas fa-list-ul
+fas fa-list-ol
+fas fa-th
+fas fa-th-large
+fas fa-th-list
+fas fa-columns
+fas fa-table
+
+# ==== Arrows / Indicators ====
+fas fa-caret-up
+fas fa-caret-down
+fas fa-caret-left
+fas fa-caret-right
+fas fa-angle-up
+fas fa-angle-down
+fas fa-angle-left
+fas fa-angle-right
+
+# ==== Brands (fab) ====
+fab fa-github
+fab fa-gitlab
+fab fa-bitbucket
+fab fa-stack-overflow
+fab fa-linkedin
+fab fa-twitter
+fab fa-x-twitter
+fab fa-youtube
+fab fa-python
+fab fa-linux
+fab fa-windows
+fab fa-apple
+fab fa-docker
+fab fa-npm
+fab fa-js
+fab fa-html5
+fab fa-css3-alt
+fab fa-markdown
+fab fa-google
+fab fa-facebook
+fab fa-instagram
+
+# ==== Misc useful ====
+fas fa-user
+far fa-user
+fas fa-users
+fas fa-user-circle
+far fa-user-circle
+fas fa-map
+far fa-map
+fas fa-map-marker-alt
+fas fa-location-arrow
+fas fa-heart
+far fa-heart
+fas fa-star
+far fa-star
+fas fa-book
+fas fa-book-open
+fas fa-graduation-cap
+fas fa-lightbulb
+fas fa-flag
+fas fa-tags
+fas fa-tag
+fas fa-shopping-cart
+fas fa-cart-plus

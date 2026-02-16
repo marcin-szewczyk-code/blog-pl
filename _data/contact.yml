@@ -1,9 +1,8 @@
 #  The contact options.
 
-- type: email
-  icon: fas fa-envelope
-  url: mailto:twoj.email@domena.pl
-  label: Email
+- type: website
+  icon: fas fa-globe
+  url: https://marcinszewczyk.net
 
 - type: linkedin
   icon: fab fa-linkedin
@@ -21,7 +20,7 @@
   label: ORCID
 
 - type: website
-  icon: fas fa-globe
+  icon: fas fa-landmark
   url: https://www.ee.pw.edu.pl/~szewczyk/
   label: Faculty page
 

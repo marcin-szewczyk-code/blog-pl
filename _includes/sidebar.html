@@ -1,20 +1,19 @@
 <!-- The Side Bar -->
 
 <aside aria-label="Sidebar" id="sidebar" class="d-flex flex-column align-items-end">
-
   <!-- Language switch and RSS -->
 <div style="position: absolute; top: 0.75rem; left: 1rem; z-index: 10; font-size: 0.9rem; white-space: nowrap;">
-  <i class="fas fa-globe text-muted"></i>
+  <button type="button"
+          id="mode-toggle"
+          class="text-muted p-0 border-0 bg-transparent align-baseline"
+          style="font: inherit; line-height: inherit; vertical-align: baseline;"
+          aria-label="Switch Mode"
+          title="Tryb jasny/ciemny">
+    <i class="fas fa-adjust"></i>
+  </button>
   <a href="https://blog.marcinszewczyk.net" class="text-muted fw-semibold ms-1">PL</a>
   <span class="text-muted" style="margin:0 0.12rem;">|</span>
   <a href="https://en.blog.marcinszewczyk.net" class="text-muted">EN</a>
-  <span class="text-muted" style="margin:0 0.12rem;">•</span>
-  <a class="text-muted text-decoration-none"
-     href="{{ '/legal/' | relative_url }}"
-     aria-label="Licencja"
-     title="Licencja">
-    <i class="far fa-copyright"></i>
-  </a>
   <span class="text-muted" style="margin:0 0.12rem;">•</span>
   <a class="text-muted text-decoration-none"
      href="{{ '/rss/' | relative_url }}"
@@ -24,10 +23,7 @@
   </a>
 </div>
 
-
-
-</div>
-  <header class="profile-wrapper">
+  <header class="profile-wrapper" style="padding-top: 0.3rem;">
     <a href="{{ '/' | relative_url }}" id="avatar" class="rounded-circle">
       {%- if site.avatar != empty and site.avatar -%}
         {%- capture avatar_url -%}
@@ -66,17 +62,8 @@
     </ul>
   </nav>
 
+  
   <div class="sidebar-bottom d-flex flex-wrap  align-items-center w-100">
-    {% unless site.theme_mode %}
-      <button type="button" class="btn btn-link nav-link" aria-label="Switch Mode" id="mode-toggle">
-        <i class="fas fa-adjust"></i>
-      </button>
-
-      {% if site.data.contact.size > 0 %}
-        <span class="icon-border"></span>
-      {% endif %}
-    {% endunless %}
-
     {% for entry in site.data.contact %}
       {%- assign url = null -%}
 
@@ -126,6 +113,8 @@
       {% endif %}
     {% endfor %}
   </div>
+
+
   <!-- .sidebar-bottom -->
 </aside>
 <!-- #sidebar -->
