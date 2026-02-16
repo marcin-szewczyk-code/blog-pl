@@ -18,7 +18,7 @@ Pod każdym wpisem wyświetlana jest informacja:
 
 > © Marcin Szewczyk. Wszelkie prawa zastrzeżone.
 
-Wykorzystanie materiałów wymaga uprzedniej zgody autora, z wyjątkiem przypadków dozwolonych przepisami prawa autorskiego, w szczególności cytowania krótkich fragmentów z podaniem źródła.
+Wykorzystanie materiałów wymaga uprzedniej zgody autora, z wyjątkiem przypadków dozwolonych prawem autorskim, w szczególności cytowania krótkich fragmentów z podaniem źródła.
 
 ### Informacja w stopce
 

@@ -91,7 +91,7 @@ tooltip:
     fail: Nie udało się skopiować
 
 notification:
-  update_available: Dostępna jest nowa wersja
+  update_found: Dostępna jest nowa wersja
   update: "Aktualizuj"
   
 date:
