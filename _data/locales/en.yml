@@ -3,7 +3,7 @@
 # Theme: Chirpy
 # ==================================================================================
 
-meta: "Powered by :PLATFORM · Theme: :THEME · :PRIVACY"
+meta: "Generator: :PLATFORM · Theme: :THEME · :PRIVACY"
 
 copyright:
   brief: "All rights reserved."

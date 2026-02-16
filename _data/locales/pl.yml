@@ -67,7 +67,7 @@ footer:
 #meta: "Powered by :PLATFORM · Theme: :THEME"
 #meta: "Powered by :PLATFORM · Motyw: :THEME · Polityka prywatności: Google Analytics (GA4)"
 
-meta: "Powered by :PLATFORM · Motyw: :THEME · :PRIVACY"
+meta: "Generator: :PLATFORM · Motyw: :THEME · :PRIVACY"
 
 #meta:
 #  title: Blog
