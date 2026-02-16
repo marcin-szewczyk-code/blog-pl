@@ -14,20 +14,11 @@ Z tego względu przyjęto zachowawczy model licencyjny zapewniający pełną kon
 
 Wszystkie teksty, struktura oraz oryginalne ilustracje publikowane na blogu są chronione prawem autorskim.
 
+Pod każdym wpisem wyświetlana jest informacja:
+
 > © Marcin Szewczyk. Wszelkie prawa zastrzeżone.
 
-Wykorzystanie materiałów wymaga uprzedniej zgody autora, z wyjątkiem przypadków dozwolonych przepisami prawa, w szczególności cytowania krótkich fragmentów z podaniem źródła.
-
-### Kod źródłowy
-
-Kod źródłowy publikowany w odrębnych repozytoriach może być objęty inną licencją, na przykład licencją MIT.
-
-Rozdzielenie to jest celowe:
-
-- treść redakcyjna → chroniona (Wszelkie prawa zastrzeżone),
-- kod źródłowy → może być udostępniany jako open source.
-
-Każde repozytorium określa swoją licencję w pliku LICENSE.
+Wykorzystanie materiałów wymaga uprzedniej zgody autora, z wyjątkiem przypadków dozwolonych przepisami prawa autorskiego, w szczególności cytowania krótkich fragmentów z podaniem źródła.
 
 ### Informacja w stopce
 
@@ -39,8 +30,13 @@ gdzie YYYY oznacza bieżący rok.
 
 Wskazuje to rok rozpoczęcia projektu oraz jego dalszy rozwój.
 
-Pod każdym wpisem wyświetlana jest informacja:
+### Kod źródłowy
 
-> © Marcin Szewczyk. Wszelkie prawa zastrzeżone.
+Kod źródłowy publikowany w odrębnych repozytoriach może być objęty inną licencją, na przykład licencją MIT.
 
-Dotyczy ona każdego artykułu jako odrębnego utworu i podlega tym samym zasadom ochrony.
+Rozdzielenie to jest celowe:
+
+- treść redakcyjna → chroniona (Wszelkie prawa zastrzeżone),
+- kod źródłowy → może być udostępniany jako open source.
+
+Każde repozytorium określa swoją licencję w pliku LICENSE.
