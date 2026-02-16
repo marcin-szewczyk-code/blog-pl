@@ -6,10 +6,11 @@ permalink: /legal/
 
 ## Prawa autorskie i licencja
 
-Ten blog stanowi część długoterminowego projektu autorskiego.  
-Publikowane treści mogą zostać w przyszłości zredagowane, rozszerzone i wydane w formie książki generowanej ze źródeł LaTeX.
+Ten blog stanowi część długoterminowego projektu autorskiego.
 
-Z tego względu przyjęty model licencyjny ma charakter zachowawczy.
+Publikowane treści mogą zostać w przyszłości zredagowane, rozszerzone i wykorzystane w innych formach publikacji, przygotowanych w procesie konwersji źródeł Markdown (np. do formatu LaTeX z wykorzystaniem narzędzi takich jak PyPandoc).
+
+Z tego względu przyjęto zachowawczy model licencyjny zapewniający pełną kontrolę autorską.
 
 ### Treść redakcyjna
 
@@ -17,14 +18,7 @@ Wszystkie teksty, struktura oraz oryginalne ilustracje publikowane na blogu są 
 
 > © Marcin Szewczyk. Wszelkie prawa zastrzeżone.
 
-Oznacza to, że bez uprzedniej pisemnej zgody autora nie jest dozwolone:
-
-- kopiowanie wpisów w całości,
-- publikowanie tłumaczeń,
-- rozpowszechnianie lub sprzedaż kompilacji,
-- komercyjne wykorzystanie treści.
-
-Dozwolone jest cytowanie krótkich fragmentów z podaniem źródła zgodnie z obowiązującymi przepisami prawa autorskiego.
+Wykorzystanie materiałów wymaga uprzedniej zgody autora, z wyjątkiem przypadków dozwolonych przepisami prawa, w szczególności cytowania krótkich fragmentów z podaniem źródła.
 
 ### Kod źródłowy
 
@@ -41,7 +35,7 @@ Każde repozytorium określa swoją licencję w pliku LICENSE.
 
 W stopce strony wyświetlany jest zapis:
 
-© 2026–YYYY Marcin Szewczyk. Wszelkie prawa zastrzeżone.
+> © 2026–YYYY Marcin Szewczyk. Wszelkie prawa zastrzeżone.
 
 gdzie YYYY oznacza bieżący rok.
 
@@ -49,6 +43,6 @@ Wskazuje to rok rozpoczęcia projektu oraz jego dalszy rozwój.
 
 Pod każdym wpisem wyświetlana jest informacja:
 
-© Marcin Szewczyk. Wszelkie prawa zastrzeżone.
+> © Marcin Szewczyk. Wszelkie prawa zastrzeżone.
 
-Dotyczy ona każdego artykułu jako odrębnego utworu i odzwierciedla ten sam model ochrony praw autorskich, jaki obowiązuje dla całego projektu.
+Dotyczy ona każdego artykułu jako odrębnego utworu i podlega tym samym zasadom ochrony.
