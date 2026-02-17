@@ -47,7 +47,7 @@ Na początku HTML-a ikony były małymi plikami graficznymi wstawianymi przez `<
   <img src="/assets/posts/jekyll-icons/java-icons/Help24.gif" alt="Help24" style="display:inline-block;margin:0 4px;vertical-align:middle;">
 </div>
 
-***Rys. 1.** Pliki graficzne `.gif` ikon Java/Swing, © Sun Microsystems, 2000.*
+***Rys. 1.** Pliki graficzne `.gif` ikon Java Swing, © Sun Microsystems, 2000.*
 
 Z czasem pojawiły się inne techniki (CSS, SVG). Jednym z popularnych rozwiązań stał się **Font Awesome**. Jest to zestaw ikon udostępniany jako font/SVG z odpowiednimi klasami CSS. Ikony są renderowane jak font (albo SVG), a wybór ikony i jej wyglądu sprowadza się do doboru klas CSS.
 
@@ -74,7 +74,7 @@ Klasy mają dwa człony:
   - `fab` → brands (logotypy marek)
 - `fa-github` — nazwa ikony.
 
-Ikony wykorzystywane w ty m blogu:
+Ikony wykorzystywane w tym blogu:
 
 ```html
 <i class="fas fa-adjust text-muted" aria-hidden="true"></i>
@@ -95,7 +95,7 @@ Dodałem prosty skrypt w Pythonie, żeby mieć pod ręką nazwy wybranych ikon.
 Co robi skrypt:
 
 1.  czyta listę klas z pliku tekstowego
-2.  generuje tabelę w Markdownie
+2.  generuje siatkę ikon w Markdownie
 3.  zapisuje gotowy plik `.md` do wklejenia we wpis
 
 Dane wejściowe -- nazwy ikon: [icons-font-awesome-input.txt](/assets/posts/jekyll-icons/icons-font-awesome-input.txt).
