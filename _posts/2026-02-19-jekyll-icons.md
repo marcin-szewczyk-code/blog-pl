@@ -1,5 +1,5 @@
 ---
-title: "Blog Jekyll: Ikony – jak działają i jak ich używam"
+title: "Blog Jekyll: Ikony w blogu – klasy CSS i Font Awesome"
 date: 2026-02-19 07:00:00 +0100
 categories: [Blog]
 tags: [jekyll, font-awesome, css, python]
