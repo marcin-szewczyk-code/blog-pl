@@ -51,7 +51,7 @@ Na początku HTML-a ikony były małymi plikami graficznymi wstawianymi przez `<
 
 Z czasem pojawiły się inne techniki (CSS, SVG). Jednym z popularnych rozwiązań stał się **Font Awesome**. Jest to zestaw ikon udostępniany jako font/SVG z odpowiednimi klasami CSS. Ikony są renderowane jak font (albo SVG), a wybór ikony i jej wyglądu sprowadza się do doboru klas CSS.
 
-Pełny zestaw Font Awesome jest płatny, ale bardzo wiele ikon dostępnych jest w wersji darmowej.
+Pełny zestaw Font Awesome jest płatny (![https://fontawesome.com/](https://fontawesome.com/)), ale bardzo wiele ikon dostępnych jest w wersji darmowej.
 
 ## Czym są „ikony” w Jekyllu (na przykładzie Chirpy)
 
