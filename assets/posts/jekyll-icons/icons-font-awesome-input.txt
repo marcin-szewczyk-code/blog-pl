@@ -196,3 +196,55 @@ fas fa-tags
 fas fa-tag
 fas fa-shopping-cart
 fas fa-cart-plus
+
+fas fa-cube
+fas fa-cubes
+fas fa-drafting-compass
+fas fa-ruler
+fas fa-ruler-combined
+fas fa-tools
+fas fa-wrench
+fas fa-screwdriver
+fas fa-hammer
+
+fas fa-atom
+fas fa-flask
+fas fa-vial
+fas fa-brain
+fas fa-infinity
+fas fa-superscript
+fas fa-square-root-alt
+fas fa-wave-square
+
+fas fa-code
+fas fa-terminal
+fas fa-microchip
+fas fa-calculator
+fas fa-database
+fas fa-server
+fas fa-memory
+fas fa-cogs
+fas fa-network-wired
+
+fas fa-bolt
+fas fa-plug
+fas fa-power-off
+fas fa-charging-station
+fas fa-solar-panel
+fas fa-broadcast-tower
+
+fas fa-hard-hat
+fas fa-industry
+fas fa-building
+fas fa-project-diagram
+fas fa-bridge
+
+fas fa-square-root-alt
+fas fa-superscript
+fas fa-subscript
+fas fa-divide
+fas fa-equals
+fas fa-not-equal
+fas fa-percentage
+fas fa-function
+
