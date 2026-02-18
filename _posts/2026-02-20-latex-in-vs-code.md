@@ -1,5 +1,5 @@
 ---
-title: "LaTeX (1/N): VS Code zamiast TeXstudio – konfiguracja krok po kroku"
+title: "LaTeX: VS Code zamiast TeXstudio – konfiguracja krok po kroku"
 date: 2026-02-20 07:00:00 +0100
 categories: [LaTeX, Tools]
 tags: [latex, vscode, texstudio, overleaf, workflow, setup]
