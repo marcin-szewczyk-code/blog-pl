@@ -1,5 +1,5 @@
 ---
-title: "Środowisko (1/N): Windows – dlaczego, co wyłączam i co dodaję"
+title: "Środowisko: Windows – dlaczego, co wyłączam i co dodaję"
 date: 2026-02-12 07:00:00 +0100
 categories: [Environment]
 tags: [windows, environment, setup]

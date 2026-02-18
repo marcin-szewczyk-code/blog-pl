@@ -1,5 +1,5 @@
 ---
-title: "Tools (1/N): SolidWorks – Getting Started"
+title: "Tools: SolidWorks – Getting Started"
 date: 2026-02-17 07:00:00 +0100
 categories: [Tools]
 tags: [solidworks, cad, getting-started, certification]

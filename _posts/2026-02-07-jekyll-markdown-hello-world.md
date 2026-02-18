@@ -1,5 +1,5 @@
 ---
-title: "Blog Jekyll (2/6): Jak robić wpisy na blogu – Markdown „Hello World” w Jekyllu"
+title: "Blog Jekyll: Jak robić wpisy na blogu – Markdown „Hello World” w Jekyllu"
 date: 2026-02-07 07:00:00 +0100
 categories: [Blog]
 tags: [blog, jekyll, hello-world]

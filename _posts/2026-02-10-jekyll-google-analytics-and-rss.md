@@ -1,5 +1,5 @@
 ---
-title: "Blog Jekyll (5/6): Google Analytics i RSS"
+title: "Blog Jekyll: Google Analytics i RSS"
 date: 2026-02-10 07:00:00 +0100
 categories: [Blog]
 tags: [blog, jekyll, google-analytics, rss, setup]

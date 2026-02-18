@@ -1,5 +1,5 @@
 ---
-title: "Blog Jekyll (4/6): Konfiguracja domeny i GitHub Pages – DNS, HTTPS i przekierowania"
+title: "Blog Jekyll: Konfiguracja domeny i GitHub Pages – DNS, HTTPS i przekierowania"
 date: 2026-02-09 07:00:00 +0100
 categories: [Blog]
 tags: [blog, jekyll, setup]

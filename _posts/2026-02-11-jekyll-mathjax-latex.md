@@ -1,5 +1,5 @@
 ---
-title: "Blog Jekyll (6/6): MathJax do wzorów matematycznych LaTeX"
+title: "Blog Jekyll: MathJax do wzorów matematycznych LaTeX"
 date: 2026-02-11 07:00:00 +0100
 categories: [Blog]
 tags: [blog, jekyll, latex, setup]

@@ -1,5 +1,5 @@
 ---
-title: "Środowisko (2/N): Linux pod Windows – MSYS2, MinGW i gcc"
+title: "Środowisko: Linux pod Windows – MSYS2, MinGW i gcc"
 date: 2026-02-13 07:00:00 +0100
 categories: [Environment]
 tags: [linux, environment, setup, msys2]

@@ -1,5 +1,5 @@
 ---
-title: "Web (1/N): Pięć modeli generowania HTML – Hello World dawniej i dziś"
+title: "Web: Pięć modeli generowania HTML – Hello World dawniej i dziś"
 date: 2026-02-18 07:00:00 +0100
 categories: [Web]
 tags: [web, html, php, css, js, hello-world]
