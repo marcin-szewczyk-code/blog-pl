@@ -98,3 +98,25 @@ date:
   long: "%d %B %Y"
   short: "%d.%m.%Y"
 
+
+# ----- Posts related labels -----
+
+post:
+  written_by: Autor
+  posted: Opublikowano
+  updated: Zaktualizowano
+  words: words
+  pageview_measure: views
+  read_time:
+    unit: min
+    prompt: czytania
+  relate_posts: Powiązane wpisy
+  share: Udostępnij
+  button:
+    next: Następny
+    previous: Poprzedni
+    copy_code:
+      succeed: Skopiowano!
+    share_link:
+      title: Skopuj link
+      succeed: Link skopiowany!
