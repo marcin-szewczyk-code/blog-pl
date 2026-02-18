@@ -1,0 +1,108 @@
+% File: hello-practical-en.tex
+% Author: Marcin Szewczyk
+% Title: LaTeX Hello World practical example
+% Created: 2026-02-20
+
+\documentclass[a4paper,11pt]{article}
+
+% --- Encoding & language ---
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+
+% --- Layout ---
+\usepackage[left=18mm,right=18mm,top=18mm,bottom=18mm]{geometry}
+\usepackage{microtype}
+
+% --- Section spacing ---
+\usepackage{titlesec}
+\titlespacing*{\section}{0pt}{0.8\baselineskip}{0.3\baselineskip}
+\titlespacing*{\subsection}{0pt}{0.6\baselineskip}{0.2\baselineskip}
+
+% --- Math & graphics ---
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{wrapfig}
+
+% --- Hyperlinks ---
+\usepackage{xcolor}
+\usepackage[
+colorlinks=true,
+linkcolor=blue!50!black,
+urlcolor=blue!50!black,
+citecolor=blue!50!black
+]{hyperref}
+
+% --- Frame settings ---
+\setlength{\fboxsep}{4pt}
+\setlength{\fboxrule}{0.6pt}
+
+% --- Metadata ---
+\title{Hello World in \LaTeX:\\
+	Document Structure and a (Nearly) Minimal Example}
+\author{Marcin Szewczyk}
+\date{\today}
+
+\begin{document}
+	
+	\maketitle
+	\tableofcontents
+	
+	\section{Introduction}
+	
+	\subsection{Text}
+	
+	This is a sample \LaTeX\ document.
+	We can write regular text and build document structure.
+	
+	\subsection{Mathematics}
+	
+	Mathematical expressions can be written inline,
+	$ e^x=\sum_{n=0}^{\infty}{x^n\over n!} $,
+	or displayed as separate equations:
+	
+	\begin{equation}\label{eq-ex}
+		e^x=\sum_{n=0}^{\infty}{x^n\over n!},
+	\end{equation}
+	
+	\noindent and then conveniently referenced~\eqref{eq-ex}.
+	
+	\subsection{Citations}
+	
+	We can cite literature \cite{oppenheim2023},
+	group citations \cite{oppenheim2023,stroustrup2013,grebosz2004},
+	or add page numbers \cite[p.~12]{oppenheim2023}.
+	
+	\section{Figures}
+	
+	\begin{wrapfigure}{r}{0.42\textwidth}
+		\centering
+		\fbox{\includegraphics[width=0.38\textwidth]{figures/mat-gcb.pdf}}
+		\caption{Example figure}
+		\label{fig:example}
+	\end{wrapfigure}
+	
+	Example of inserting a graphic.
+	We can refer to the figure (Fig.~\ref{fig:example}) in the text.
+	
+	\section*{Bibliography}
+	
+	\begin{thebibliography}{99}
+		
+		\bibitem{oppenheim2023}
+		T.~Oetiker, H.~Partl, I.~Hyna, E.~Schlegl,
+		\textit{The Not So Short Introduction to \LaTeX2e}, 2023.
+		
+		\bibitem{stroustrup2013}
+		B.~Stroustrup,
+		\textit{The C++ Programming Language},
+		4th ed., Addison-Wesley, 2013.
+		
+		\bibitem{grebosz2004}
+		J.~Grębosz,
+		\textit{Symfonia C++ Standard. Programowanie w języku C++},
+		Edition 2004.
+		
+	\end{thebibliography}
+	
+\end{document}

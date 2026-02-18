@@ -1,5 +1,5 @@
 ---
-title: "Liczba „e” (3/3): Z dokładnością do miliona miejsc po przecinku"
+title: "Liczba „e”: Z dokładnością do miliona miejsc po przecinku"
 date: 2026-02-16 07:00:00 +0100
 categories: [Mathematics]
 tags: [math, e, taylor-series, c, gmp]

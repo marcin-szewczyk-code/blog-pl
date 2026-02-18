@@ -1,0 +1,6 @@
+cat > /mingw64/bin/gswin32c <<'EOF'
+#!/usr/bin/env bash
+exec /mingw64/bin/gswin32c.exe "$@"
+EOF
+
+chmod +x /mingw64/bin/gswin32c

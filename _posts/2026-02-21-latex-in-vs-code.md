@@ -1,9 +1,13 @@
 ---
 title: "LaTeX: VS Code zamiast TeXstudio – konfiguracja krok po kroku"
-date: 2026-02-20 07:00:00 +0100
+date: 2026-02-21 07:00:00 +0100
 categories: [LaTeX, Tools]
 tags: [latex, vscode, texstudio, overleaf, workflow, setup]
 ---
+
+W [TeXstudio](https://www.texstudio.org/) napisałem oraz wykonałem skład i opracowanie graficzne książki *[Metody analityczne w obliczeniach procesów łączeniowych w systemie elektroenergetycznym](https://www.sklep.pw.edu.pl/produkty/metody-analityczne-w-obliczeniach-procesow-laczeniowych-w-systemie-elektroenergetycznym)*, wydanej przez OWPW w 2024 roku.
+
+Tworząc ten blog, przeniosłem swój workflow z TeXstudio do [VS Code](https://code.visualstudio.com/), żeby pracować w jednym środowisku z Markdownem, HTML0-m, CSS-em, Pythonem, C++, Gitem i LaTeX-em. Tu pewnie będę opracowywał kolejne książki.
 
 Dokument LaTeX jest plikiem tekstowym opisującym strukturę i skład przy użyciu poleceń i środowisk. Jest kompilowany do formatów wyjściowych, takich jak PDF.
 
@@ -13,11 +17,7 @@ W LaTeX-u można tworzyć dokumenty na kilka sposobów:
 - **TeXstudio** to klasyczne, wyspecjalizowane IDE zaprojektowane wyłącznie do pracy z LaTeX-em.
 - **VS Code** jest mocnym edytorem ogólnego przeznaczenia, rozszerzalnym przez rozszerzenia (extensions). Po odpowiedniej konfiguracji może pełnić rolę środowiska LaTeX i zastąpić TeXstudio, współpracując jednocześnie z GitHub.
 
-> W TeXstudio napisałem oraz wykonałem skład i opracowanie graficzne książki *[Metody analityczne w obliczeniach procesów łączeniowych w systemie elektroenergetycznym](https://www.sklep.pw.edu.pl/produkty/metody-analityczne-w-obliczeniach-procesow-laczeniowych-w-systemie-elektroenergetycznym)*, wydanej przez OWPW w 2024 roku.
-
-Tworząc blog przeniosłem swój workflow z TeXstudio do VS Code, żeby pracować w jednym środowisku z Markdownem, HTML, CSS, Pythonem, C++, Git i LaTeX-em. Tu pewnie będę opracowywał kolejne książki.
-
-Poniżej opis konfiguracji LaTeX-a w VS Code krok po kroku.
+W tym wpisie opisuję konfigurację LaTeX-a w VS Code krok po kroku.
 
 ---
 
