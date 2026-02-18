@@ -25,3 +25,24 @@ package-lock.json
 # Misc
 _sass/vendors
 assets/js/dist
+
+# LaTeX auxiliary files
+*.aux
+*.log
+*.toc
+*.out
+*.gz
+*.lof
+*.lot
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+
+# Bibliography
+*.bbl
+*.blg
+
+# Index files
+*.idx
+*.ind
+*.ilg

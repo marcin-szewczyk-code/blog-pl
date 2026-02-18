@@ -14,7 +14,7 @@ W większych projektach dołącza się pakiety oraz zarządza się strukturą pr
 Poniżej przedstawiono widok dokumentu PDF wygenerowanego z pliku [`hello-practical-pl.tex`](/assets/posts/latex-hello-world/hello-practical-pl/hello-practical-pl.tex), omawianego w tym wpisie.
 
 ![Widok wygenerowanego PDF](/assets/posts/latex-hello-world/hello-practical-pl/hello-practical-pl-preview.png)
-***Rys. 1.** Widok wygenerowanego PDF [`hello-practical-pl.pdf`](/assets/posts/latex-hello-world/hello-practical-en/hello-practical-pl.pdf).*
+***Rys. 1.** Widok wygenerowanego PDF [`hello-practical-pl.pdf`](/assets/posts/latex-hello-world/hello-practical-pl/hello-practical-pl.pdf).*
 
 ---
 
