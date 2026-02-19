@@ -38,9 +38,9 @@ Cheat sheet to zwięzłe, techniczne zestawienie kluczowych informacji w formie 
 
 Poniżej znajduje się mój cheat sheet poleceń Uniksa.
 
-📄 **Pobierz PDF**: [`unix-commands-cheat-sheet.pdf`](/assets/posts/unix-commands-cheat-sheet/unix-commands-cheat-sheet.pdf)
+📄 **Pobierz PDF**: [`unix-commands-cheat-sheet-pl.pdf`](/assets/posts/unix-commands-cheat-sheet/unix-commands-cheat-sheet-pl.pdf)
 
-![Cheat Sheet poleceń Unix](/assets/posts/unix-commands-cheat-sheet/unix-commands-cheat-sheet-web.png)
+![Cheat Sheet poleceń Unix](/assets/posts/unix-commands-cheat-sheet/unix-commands-cheat-sheet-pl-web.png)
 ***Rys. 1.** Cheat Sheet poleceń Unix.*
 
 ---

@@ -1,0 +1,236 @@
+% =================================================
+% Python Cheat Sheet
+% baposter Landscape Poster
+% LaTeX Template
+% Version 1.0 (11/06/13)
+% baposter Class Created by:
+% Brian Amberg (baposter@brian-amberg.de)
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+% Edited by Michelle Cristina de Sousa Baltazar
+% =================================================
+
+% =================================================
+% Unix Cheat Sheet
+% Marcin Szewczyk
+% Notatki 2007 · Wersja 2026
+% (C) 2007--2026 Marcin Szewczyk
+% =================================================
+
+\documentclass[landscape,a0paper,fontscale=0.285]{baposter}
+
+\title{Unix Cheat Sheet}
+
+\usepackage[T1]{fontenc}
+\usepackage[polish]{babel}
+\usepackage[utf8]{inputenc}
+
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{colortbl}
+\usepackage{tabu}
+\usepackage{mathtools}
+\usepackage{amssymb}
+\usepackage{booktabs}
+\usepackage{enumitem}
+\usepackage{palatino}
+\usepackage[font=small,labelfont=bf]{caption}
+\usepackage{multicol}
+
+\setlength{\columnsep}{1.5em}
+\setlength{\columnseprule}{0mm}
+
+\usepackage{tikz}
+\usetikzlibrary{decorations.pathmorphing}
+\usetikzlibrary{shapes,arrows}
+
+\newcommand{\compresslist}{
+    \setlength{\itemsep}{1pt}
+    \setlength{\parskip}{0pt}
+    \setlength{\parsep}{0pt}
+}
+
+\definecolor{lightblue}{rgb}{0.145,0.6666,1}
+
+\begin{document}
+
+\begin{poster}
+{
+    headerborder=closed,
+    colspacing=0.8em,
+    bgColorOne=white,
+    bgColorTwo=white,
+    borderColor=lightblue,
+    headerColorOne=black,
+    headerColorTwo=lightblue,
+    headerFontColor=white,
+    boxColorOne=white,
+    textborder=roundedleft,
+    eyecatcher=true,
+    headerheight=0.1\textheight,
+    headershape=roundedright,
+    headerfont=\Large\bf\textsc,
+    linewidth=2pt
+}
+{\bf\textsc{Unix Cheat Sheet}\vspace{0.5em}}
+{\textsc{\{ U n i x \ \ \ \ \ C h e a t \ \ \ \ \ S h e e t\} \hspace{12pt}\vspace{0.1em}}}
+{\textsc{Marcin Szewczyk \\[0.5em] Notatki 2007 · Wersja 2026 \hspace{12pt}\vspace{-0.6em}}}
+
+%================================================
+% BOX 1: UŻYTKOWNIK I POWŁOKA
+%================================================
+
+\headerbox{Użytkownik i środowisko}{name=user_shell,column=0,span=2,row=0}{
+
+    \colorbox[HTML]{CCFFFF}{\makebox[\textwidth-2\fboxsep][l]{\bf - Informacje o koncie:}}
+    \begin{itemize}\compresslist
+        \item[] \texttt{passwd} -- (ang. \emph{password}) zmiana hasła logowania użytkownika
+        \item[] \texttt{quota -v} -- (ang. \emph{quota} -- limit) wyświetlenie limitów przestrzeni dyskowej przypisanej do konta
+        \item[] \texttt{id} -- (ang. \emph{user identity}) wyświetlenie informacji o nazwie i grupie aktualnego użytkownika
+        \item[] \texttt{whoami} -- wyświetlenie nazwy bieżącego użytkownika
+        \item[] \texttt{who} / \texttt{w} -- wyświetlenie zalogowanych użytkowników (oraz ich aktywności)
+    \end{itemize}
+
+    \colorbox[HTML]{CCFFFF}{\makebox[\textwidth-2\fboxsep][l]{\bf - Sesja i pomoc:}}
+    \begin{itemize}\compresslist
+        \item[] \texttt{man polecenie} -- (ang. \emph{manual}) wyświetlenie instrukcji obsługi polecenia
+        \item[] \texttt{history} -- historia poleceń
+        \item[] \texttt{logout} -- (ang. \emph{log out}) wylogowanie użytkownika
+    \end{itemize}
+
+    \colorbox[HTML]{CCFFFF}{\makebox[\textwidth-2\fboxsep][l]{\bf - Bieżący katalog:}}
+    \begin{itemize}\compresslist
+        \item[] \texttt{pwd} -- (ang. \emph{print working directory}) wyświetlenie nazwy bieżącego katalogu
+    \end{itemize}
+
+    \colorbox[HTML]{CCFFFF}{\makebox[\textwidth-2\fboxsep][l]{\bf - Konfiguracja powłoki:}}
+    \begin{itemize}\compresslist
+        \item[] \texttt{\~{}/.zshrc} -- plik z instrukcjami wykonywanymi przy logowaniu (uwaga: błędy mogą utrudnić dostęp do konta)
+        \item[] \texttt{alias polecenie$=$'nowe polecenie'} -- przypisanie poleceniu nowej treści (warto umieszczać w \texttt{.zshrc})
+        \item[] \texttt{alias ls$=$'ls -F'} -- zaznaczanie katalogów przez \texttt{/}, a plików wykonywalnych przez \texttt{*}
+        \item[] \texttt{alias pico='pico -w -z'} -- \texttt{-w} (disable word wrap), \texttt{-z} (enable suspend)
+        \item[] \texttt{alias cp='cp -i'} -- potwierdzenie nadpisania pliku
+        \item[] \texttt{alias mv='mv -i'} -- potwierdzenie nadpisania pliku
+        \item[] \texttt{umask} -- odczytanie informacji o prawach dostępu dla nowych plików/katalogów
+        \item[] \texttt{umask ijk} -- ustawienie nowej wartości praw (analogicznie do opisu \texttt{chmod})
+    \end{itemize}
+
+    \colorbox[HTML]{CCFFFF}{\makebox[\textwidth-2\fboxsep][l]{\bf - Uruchamianie programów i PATH:}}
+    \linebreak \\
+    \noindent Programy spoza zmiennej \texttt{PATH} wymagają podania pełnej ścieżki.
+    \begin{itemize}\compresslist
+        \item[] \texttt{printenv PATH} / \texttt{echo \$PATH} -- wyświetlenie zmiennej \texttt{PATH}
+        \item[] \texttt{which polecenie} -- ścieżka do programu wykonywalnego (z \texttt{PATH})
+    \end{itemize}
+
+    \colorbox[HTML]{CCFFFF}{\makebox[\textwidth-2\fboxsep][l]{\bf - Programy użytkowe:}}
+    \begin{itemize}\compresslist
+        \item[] \texttt{nano} -- edytor tekstu w terminalu (np. \^{}O zapis, \^{}X wyjście, \^{}W szukaj)
+        \item[] \texttt{vim} -- zaawansowany edytor tekstu (tryb normalny/wstawiania, \texttt{:w} zapis, \texttt{:q} wyjście)
+        \item[] \texttt{g++} -- kompilator języka C++ (np. \texttt{g++ plik.cpp -o program})
+        \item[] \texttt{make} -- automatyzacja budowania projektu na podstawie pliku \texttt{Makefile}
+        \item[] \texttt{git} -- system kontroli wersji (np. \texttt{git clone}, \texttt{git commit}, \texttt{git push})
+        \item[] \texttt{ssh user@host} -- zdalne logowanie do systemu przez SSH
+        \item[] \texttt{tar -cvf / -xvf} -- tworzenie i rozpakowywanie archiwów
+    \end{itemize}
+
+    \vspace{0.0em}
+}
+
+%================================================
+% BOX 2: PLIKI I KATALOGI
+%================================================
+
+\headerbox{Pliki i katalogi}{name=files_dirs,column=2,row=0,bottomaligned=user_shell}{
+
+    \colorbox[HTML]{CCFFFF}{\makebox[\textwidth-2\fboxsep][l]{\bf - Nawigacja:}}
+    \begin{itemize}\compresslist
+        \item[] \texttt{ls} -- (ang. \emph{list}) wyświetlenie zawartości katalogu (\texttt{ls -al} -- wszystkie informacje)
+        \item[] \texttt{cd} -- (ang. \emph{change directory}) przejście do katalogu domowego
+        \item[] \texttt{cd nazwa} -- przejście do podanego katalogu
+        \begin{itemize}\compresslist
+            \item[] \texttt{.} -- katalog bieżący
+            \item[] \texttt{..} -- katalog nadrzędny
+            \item[] \texttt{/} -- katalog główny (root)
+            \item[] \texttt{\~} -- katalog domowy
+            \item[] \texttt{\~{}user} -- katalog domowy podanego użytkownika
+        \end{itemize}
+    \end{itemize}
+
+    \colorbox[HTML]{CCFFFF}{\makebox[\textwidth-2\fboxsep][l]{\bf - Operacje na plikach i katalogach:}}
+    \begin{itemize}\compresslist
+        \item[] \texttt{mkdir nazwa} -- utworzenie katalogu
+        \item[] \texttt{touch plik} -- utworzenie pustego pliku (lub aktualizacja czasu modyfikacji)
+        \item[] \texttt{cp nazwa1 nazwa2} -- (ang. \emph{copy}) skopiowanie pliku/katalogu \texttt{nazwa1} do \texttt{nazwa2}
+        \item[] \texttt{mv nazwa1 nazwa2} -- (ang. \emph{move}) przeniesienie/zmiana nazwy \texttt{nazwa1} na \texttt{nazwa2}
+        \item[] \texttt{ln nazwa1 nazwa2} -- utworzenie dowiązania twardego
+        \item[] \texttt{ln -s cel link} -- utworzenie dowiązania symbolicznego
+        \item[] \texttt{rm nazwa} -- (ang. \emph{remove}) usunięcie pliku
+        \item[] \texttt{rmdir nazwa} -- usunięcie pustego katalogu
+        \item[] \texttt{rm -r nazwa} -- usunięcie katalogu wraz z zawartością (uwaga: bez potwierdzenia)
+    \end{itemize}
+
+    \colorbox[HTML]{CCFFFF}{\makebox[\textwidth-2\fboxsep][l]{\bf - Uprawnienia:}}
+    \begin{itemize}\compresslist
+        \item[] \texttt{chmod ijk nazwa} -- (ang. \emph{change the permissions mode}) zmiana uprawnień (execute=1, write=2, read=4) dla owner/group/others; także: \texttt{chmod -R}
+    \end{itemize}
+
+    \colorbox[HTML]{CCFFFF}{\makebox[\textwidth-2\fboxsep][l]{\bf - Dysk i wyszukiwanie:}}
+    \begin{itemize}\compresslist
+        \item[] \texttt{du -h} -- (ang. \emph{disk usage}) zajętość katalogów
+        \item[] \texttt{df -h} -- zajętość systemów plików
+        \item[] \texttt{find ścieżka -name 'wzorzec'} -- wyszukiwanie plików/katalogów
+    \end{itemize}
+}
+
+%================================================
+% BOX 3: TEKST, POTOKI I PROGRAMY
+%================================================
+
+\headerbox{Strumienie, potoki i procesy}{name=tools_io,column=3,span=1,row=0,bottomaligned=user_shell}{
+
+    \colorbox[HTML]{CCFFFF}{\makebox[\textwidth-2\fboxsep][l]{\bf - Strumienie i potoki (I/O):}}
+    \begin{itemize}\compresslist
+        \item[] \texttt{polecenie > plik} -- zapis wyniku polecenia do pliku
+        \item[] \texttt{polecenie >> plik} -- dopisanie wyniku na końcu pliku
+        \item[] \texttt{polecenie < plik} -- pobranie danych z pliku zamiast z klawiatury
+        \item[] \texttt{polecenie1 | polecenie2} -- przekazanie wyniku \texttt{polecenie1} do \texttt{polecenie2}
+        \item[] \texttt{tee plik} -- zapis wyjścia do pliku i jednocześnie na ekran
+        \item[] \texttt{xargs} -- budowanie argumentów poleceń z potoku
+    \end{itemize}
+
+    \colorbox[HTML]{CCFFFF}{\makebox[\textwidth-2\fboxsep][l]{\bf - Narzędzia strumieniowe:}}
+    \begin{itemize}\compresslist
+        \item[] \texttt{grep tekst plik} -- wyszukiwanie tekstu w pliku
+        \item[] \texttt{cat plik} -- wyświetlenie zawartości pliku
+        \item[] \texttt{less plik} -- przeglądanie pliku strona po stronie
+        \item[] \texttt{head plik} -- początek pliku
+        \item[] \texttt{tail plik} -- koniec pliku
+        \item[] \texttt{tail -f plik} -- śledzenie dopisywanych linii (np. logów)
+        \item[] \texttt{wc plik} -- (ang. \emph{word count}) liczba linii, słów i znaków w pliku
+        \item[] \texttt{sort plik} -- sortowanie wierszy pliku
+        \item[] \texttt{uniq plik} -- usunięcie powtarzających się sąsiednich wierszy (często używane po \texttt{sort})
+    \end{itemize}
+
+    \colorbox[HTML]{CCFFFF}{\makebox[\textwidth-2\fboxsep][l]{\bf - Procesy:}}
+    \begin{itemize}\compresslist
+        \item[] \texttt{ps} / \texttt{ps aux} -- lista procesów
+        \item[] \texttt{top} -- dynamiczny podgląd procesów
+        \item[] \texttt{kill PID} -- zakończenie procesu o podanym PID
+    \end{itemize}
+}
+
+\node[
+    anchor=south east,
+    font=\footnotesize,
+    text=gray,
+    xshift=-1.2cm,
+    yshift=0.0cm
+]
+at (current page.south east)
+{© 2007--2026 Marcin Szewczyk};
+
+\end{poster}
+\end{document}

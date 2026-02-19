@@ -1,0 +1,236 @@
+% =================================================
+% Python Cheat Sheet
+% baposter Landscape Poster
+% LaTeX Template
+% Version 1.0 (11/06/13)
+% baposter Class Created by:
+% Brian Amberg (baposter@brian-amberg.de)
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+% Edited by Michelle Cristina de Sousa Baltazar
+% =================================================
+
+% =================================================
+% Unix Cheat Sheet
+% Marcin Szewczyk
+% Notes 2007 · Version 2026
+% (C) 2007--2026 Marcin Szewczyk
+% =================================================
+
+\documentclass[landscape,a0paper,fontscale=0.285]{baposter}
+
+\title{Unix Cheat Sheet}
+
+\usepackage[T1]{fontenc}
+\usepackage[polish]{babel}
+\usepackage[utf8]{inputenc}
+
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{colortbl}
+\usepackage{tabu}
+\usepackage{mathtools}
+\usepackage{amssymb}
+\usepackage{booktabs}
+\usepackage{enumitem}
+\usepackage{palatino}
+\usepackage[font=small,labelfont=bf]{caption}
+\usepackage{multicol}
+
+\setlength{\columnsep}{1.5em}
+\setlength{\columnseprule}{0mm}
+
+\usepackage{tikz}
+\usetikzlibrary{decorations.pathmorphing}
+\usetikzlibrary{shapes,arrows}
+
+\newcommand{\compresslist}{
+    \setlength{\itemsep}{1pt}
+    \setlength{\parskip}{0pt}
+    \setlength{\parsep}{0pt}
+}
+
+\definecolor{lightblue}{rgb}{0.145,0.6666,1}
+
+\begin{document}
+
+\begin{poster}
+{
+    headerborder=closed,
+    colspacing=0.8em,
+    bgColorOne=white,
+    bgColorTwo=white,
+    borderColor=lightblue,
+    headerColorOne=black,
+    headerColorTwo=lightblue,
+    headerFontColor=white,
+    boxColorOne=white,
+    textborder=roundedleft,
+    eyecatcher=true,
+    headerheight=0.1\textheight,
+    headershape=roundedright,
+    headerfont=\Large\bf\textsc,
+    linewidth=2pt
+}
+{\bf\textsc{Unix Cheat Sheet}\vspace{0.5em}}
+{\textsc{\{ U n i x \ \ \ \ \ C h e a t \ \ \ \ \ S h e e t\} \hspace{12pt}\vspace{0.1em}}}
+{\textsc{Marcin Szewczyk \\[0.5em] Notes 2007 · Version 2026 \hspace{12pt}\vspace{-0.6em}}}
+
+%================================================
+% BOX 1: USER AND SHELL
+%================================================
+
+\headerbox{User and environment}{name=user_shell,column=0,span=2,row=0}{
+
+    \colorbox[HTML]{CCFFFF}{\makebox[\textwidth-2\fboxsep][l]{\bf - Account information:}}
+    \begin{itemize}\compresslist
+        \item[] \texttt{passwd} -- (password) change the user's login password
+        \item[] \texttt{quota -v} -- (quota -- limit) display disk space limits assigned to the account
+        \item[] \texttt{id} -- (user identity) display information about the current user's name and group
+        \item[] \texttt{whoami} -- display the name of the current user
+        \item[] \texttt{who} / \texttt{w} -- display logged-in users (and their activity)
+    \end{itemize}
+
+    \colorbox[HTML]{CCFFFF}{\makebox[\textwidth-2\fboxsep][l]{\bf - Session and help:}}
+    \begin{itemize}\compresslist
+        \item[] \texttt{man polecenie} -- (manual) display the manual page for a command
+        \item[] \texttt{history} -- command history
+        \item[] \texttt{logout} -- log out the user
+    \end{itemize}
+
+    \colorbox[HTML]{CCFFFF}{\makebox[\textwidth-2\fboxsep][l]{\bf - Current directory:}}
+    \begin{itemize}\compresslist
+        \item[] \texttt{pwd} -- (print working directory) display the name of the current directory
+    \end{itemize}
+
+    \colorbox[HTML]{CCFFFF}{\makebox[\textwidth-2\fboxsep][l]{\bf - Shell configuration:}}
+    \begin{itemize}\compresslist
+        \item[] \texttt{\~{}/.zshrc} -- file with instructions executed at login (note: errors may prevent access to the account)
+        \item[] \texttt{alias polecenie$=$'nowe polecenie'} -- assign a new definition to a command (recommended to place in \texttt{.zshrc})
+        \item[] \texttt{alias ls$=$'ls -F'} -- mark directories with \texttt{/} and executable files with \texttt{*}
+        \item[] \texttt{alias pico='pico -w -z'} -- \texttt{-w} (disable word wrap), \texttt{-z} (enable suspend)
+        \item[] \texttt{alias cp='cp -i'} -- confirm file overwrite
+        \item[] \texttt{alias mv='mv -i'} -- confirm file overwrite
+        \item[] \texttt{umask} -- display default permissions for new files/directories
+        \item[] \texttt{umask ijk} -- set new permission value (analogous to \texttt{chmod})
+    \end{itemize}
+
+    \colorbox[HTML]{CCFFFF}{\makebox[\textwidth-2\fboxsep][l]{\bf - Running programs and PATH:}}
+    \linebreak \\
+    \noindent Programs not in the \texttt{PATH} variable require the full path.
+    \begin{itemize}\compresslist
+        \item[] \texttt{printenv PATH} / \texttt{echo \$PATH} -- display the \texttt{PATH} variable
+        \item[] \texttt{which polecenie} -- path to the executable program (from \texttt{PATH})
+    \end{itemize}
+
+    \colorbox[HTML]{CCFFFF}{\makebox[\textwidth-2\fboxsep][l]{\bf - Utility programs:}}
+    \begin{itemize}\compresslist
+        \item[] \texttt{nano} -- terminal text editor (e.g. \^{}O save, \^{}X exit, \^{}W search)
+        \item[] \texttt{vim} -- advanced text editor (normal/insert mode, \texttt{:w} save, \texttt{:q} exit)
+        \item[] \texttt{g++} -- C++ compiler (e.g. \texttt{g++ plik.cpp -o program})
+        \item[] \texttt{make} -- automate project builds based on a \texttt{Makefile}
+        \item[] \texttt{git} -- version control system (e.g. \texttt{git clone}, \texttt{git commit}, \texttt{git push})
+        \item[] \texttt{ssh user@host} -- remote login via SSH
+        \item[] \texttt{tar -cvf / -xvf} -- create and extract archives
+    \end{itemize}
+
+    \vspace{0.0em}
+}
+
+%================================================
+% BOX 2: FILES AND DIRECTORIES
+%================================================
+
+\headerbox{Files and directories}{name=files_dirs,column=2,row=0,bottomaligned=user_shell}{
+
+    \colorbox[HTML]{CCFFFF}{\makebox[\textwidth-2\fboxsep][l]{\bf - Navigation:}}
+    \begin{itemize}\compresslist
+        \item[] \texttt{ls} -- (list) display directory contents (\texttt{ls -al} -- all information)
+        \item[] \texttt{cd} -- (change directory) go to the home directory
+        \item[] \texttt{cd nazwa} -- go to the specified directory
+        \begin{itemize}\compresslist
+            \item[] \texttt{.} -- current directory
+            \item[] \texttt{..} -- parent directory
+            \item[] \texttt{/} -- root directory
+            \item[] \texttt{\~} -- home directory
+            \item[] \texttt{\~{}user} -- specified user's home directory
+        \end{itemize}
+    \end{itemize}
+
+    \colorbox[HTML]{CCFFFF}{\makebox[\textwidth-2\fboxsep][l]{\bf - File and directory operations:}}
+    \begin{itemize}\compresslist
+        \item[] \texttt{mkdir nazwa} -- create a directory
+        \item[] \texttt{touch plik} -- create an empty file (or update modification time)
+        \item[] \texttt{cp nazwa1 nazwa2} -- (copy) copy file/directory \texttt{nazwa1} to \texttt{nazwa2}
+        \item[] \texttt{mv nazwa1 nazwa2} -- (move) move/rename \texttt{nazwa1} to \texttt{nazwa2}
+        \item[] \texttt{ln nazwa1 nazwa2} -- create a hard link
+        \item[] \texttt{ln -s cel link} -- create a symbolic link
+        \item[] \texttt{rm nazwa} -- (remove) delete a file
+        \item[] \texttt{rmdir nazwa} -- remove an empty directory
+        \item[] \texttt{rm -r nazwa} -- remove a directory with its contents (warning: no confirmation)
+    \end{itemize}
+
+    \colorbox[HTML]{CCFFFF}{\makebox[\textwidth-2\fboxsep][l]{\bf - Permissions:}}
+    \begin{itemize}\compresslist
+        \item[] \texttt{chmod ijk nazwa} -- (change the permissions mode) change permissions (execute=1, write=2, read=4) for owner/group/others; also: \texttt{chmod -R}
+    \end{itemize}
+
+    \colorbox[HTML]{CCFFFF}{\makebox[\textwidth-2\fboxsep][l]{\bf - Disk and search:}}
+    \begin{itemize}\compresslist
+        \item[] \texttt{du -h} -- (disk usage) directory size
+        \item[] \texttt{df -h} -- filesystem usage
+        \item[] \texttt{find ścieżka -name 'wzorzec'} -- search for files/directories
+    \end{itemize}
+}
+
+%================================================
+% BOX 3: TEXT, PIPES AND PROCESSES
+%================================================
+
+\headerbox{Streams, pipes and processes}{name=tools_io,column=3,span=1,row=0,bottomaligned=user_shell}{
+
+    \colorbox[HTML]{CCFFFF}{\makebox[\textwidth-2\fboxsep][l]{\bf - Streams and pipes (I/O):}}
+    \begin{itemize}\compresslist
+        \item[] \texttt{polecenie > plik} -- write command output to a file
+        \item[] \texttt{polecenie >> plik} -- append output to the end of a file
+        \item[] \texttt{polecenie < plik} -- read input from a file instead of the keyboard
+        \item[] \texttt{polecenie1 | polecenie2} -- pass output of \texttt{polecenie1} to \texttt{polecenie2}
+        \item[] \texttt{tee plik} -- write output to a file and simultaneously to the screen
+        \item[] \texttt{xargs} -- build command arguments from a pipe
+    \end{itemize}
+
+    \colorbox[HTML]{CCFFFF}{\makebox[\textwidth-2\fboxsep][l]{\bf - Stream tools:}}
+    \begin{itemize}\compresslist
+        \item[] \texttt{grep tekst plik} -- search for text in a file
+        \item[] \texttt{cat plik} -- display file contents
+        \item[] \texttt{less plik} -- view file page by page
+        \item[] \texttt{head plik} -- beginning of file
+        \item[] \texttt{tail plik} -- end of file
+        \item[] \texttt{tail -f plik} -- follow appended lines (e.g. logs)
+        \item[] \texttt{wc plik} -- (word count) number of lines, words and characters in a file
+        \item[] \texttt{sort plik} -- sort file lines
+        \item[] \texttt{uniq plik} -- remove adjacent duplicate lines (often used after \texttt{sort})
+    \end{itemize}
+
+    \colorbox[HTML]{CCFFFF}{\makebox[\textwidth-2\fboxsep][l]{\bf - Processes:}}
+    \begin{itemize}\compresslist
+        \item[] \texttt{ps} / \texttt{ps aux} -- process list
+        \item[] \texttt{top} -- dynamic process viewer
+        \item[] \texttt{kill PID} -- terminate process with given PID
+    \end{itemize}
+}
+
+\node[
+    anchor=south east,
+    font=\footnotesize,
+    text=gray,
+    xshift=-1.2cm,
+    yshift=0.6cm
+]
+at (current page.south east)
+{© 2007--2026 Marcin Szewczyk};
+
+\end{poster}
+\end{document}
