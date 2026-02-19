@@ -14,5 +14,11 @@ Teraz trochę wracam do tej zabawy.
 
 Tu jest pierwszy wpis o tym [Jak powstał ten blog](/posts/blog-origin/).
 
-
 Możliwe, że będę tu umieszczał kolejne wpisy w wolnych chwilach.
+
+---
+
+> **Więcej informacji**
+>
+> - Strona główna: [https://marcinszewczyk.net](https://marcinszewczyk.net)
+> - Wersja angielska bloga: [https://en.blog.marcinszewczyk.net](https://en.blog.marcinszewczyk.net)
