@@ -11,26 +11,39 @@ Naturalny pomysł to opisać, jak zrobić bloga. Poniżej opisuję, jak to możn
 
 ## Repozytorium na GitHubie i folder lokalny
 
-### Repo na GitHubie
+### Uwagi wstępne
 
 Blog zbudowany jest na Jekyll, z motywem Chirpy (można potem zmienić), opublikowany na GitHub Pages.
 
-Czego potrzebujemy na początek i jak to wygląda u mnie:
+W GitHub Pages można publikować strony typu *User Page* lub *Project Page*:
+
+- *User Page* to repozytorium `username.github.io` powiązane z kontem użytkownika `username`, dostępne pod adresem `https://username.github.io/`
+- *Project Page* to dowolna liczba stron, z których każda jest generowana z odrębnego repozytorium, np. `/nazwa-repozytorium/`, i publikowana pod adresem `https://username.github.io/nazwa-repozytorium/`
+
+Poniżej opisuję konfigurację typu *User Page* -- tak pierwotnie zbudowany był mój blog, przed wprowadzeniem wersji dwujęzycznej.
+
+Opisana tu konfiguracja typu *User Page* jest poprawna, domyślna i w pełni wystarczająca dla strony lub bloga w jednym języku. 
+
+W moim przypadku zmieniła się na konfigurację typu *Project Page* po wprowadzeniu dwóch wersji językowych bloga (PL \| EN). Obie wersje zostały wówczas zrealizowane jako dwie odrębne strony typu *Project Page* o identycznej architekturze -- opisuję to w osobnym wpisie.
+
+### Repo na GitHubie
+
+Czego potrzebujemy na początek i jak to wyglądało u mnie (stan z momentu tworzenia bloga, przed wprowadzeniem wersji dwujęzycznej)::
 - **GitHub login**: `marcin-szewczyk-code` (konto na GitHubie)
 - **Repo name**: `marcin-szewczyk-code.github.io` (repo na GitHubie)
 - **Local directory**: `marcin-szewczyk-code.github.io` (folder na lokalnym komputerze)
-- **GitHub repo URL**: [https://github.com/marcin-szewczyk-code/marcin-szewczyk-code.github.io](https://github.com/marcin-szewczyk-code/marcin-szewczyk-code.github.io)
-- **URL techniczny (GitHub Pages)**: [https://marcin-szewczyk-code.github.io/](https://marcin-szewczyk-code.github.io/)
-- **Site URL (custom domain, ustawiony w DNS u operatora domeny)**: [https://blog.marcinszewczyk.net/](https://blog.marcinszewczyk.net/)
+- **GitHub repo URL**: `https://github.com/marcin-szewczyk-code/marcin-szewczyk-code.github.io`
+- **URL techniczny (GitHub Pages)**: `https://marcin-szewczyk-code.github.io/`
+- **Site URL (custom domain, ustawiony w DNS u operatora domeny)**: `https://blog.marcinszewczyk.net/`
 - **Pages type**: User Page (GitHub Actions dla repo na GitHubie)
 
 Mając konto na GitHubie tworzymy tam repo `marcin-szewczyk-code.github.io`, potem wgrywamy do niego szablon startowy `Chirpy`.
 
 Jak to zrobić:
-- na GitHubie tworzymy repo `marcin-szewczyk-code.github.io`
-- otwieramy repo szablonu Chirpy Starter: [https://github.com/cotes2020/chirpy-starter](https://github.com/cotes2020/chirpy-starter)
-- klikamy `Use this template` → `Create a new repository`
-- ustawiamy `Owner: marcin-szewczyk-code`, `Repository name: marcin-szewczyk-code.github.io`, `Public` → `Create repository`
+- Na GitHubie tworzymy repo `marcin-szewczyk-code.github.io`
+- Otwieramy repo szablonu Chirpy Starter: [https://github.com/cotes2020/chirpy-starter](https://github.com/cotes2020/chirpy-starter)
+- Klikamy `Use this template` → `Create a new repository`
+- Ustawiamy `Owner: marcin-szewczyk-code`, `Repository name: marcin-szewczyk-code.github.io`, `Public` → `Create repository`
 
 Wchodzimy następnie w ustawienia repo `marcin-szewczyk-code.github.io` i ustawiamy: `Settings repo → Pages → Build and deployment: GitHub Actions`.
 
@@ -49,7 +62,7 @@ Pozostaje konfiguracja szablonu Chirpy, stworzenie pierwszego wpisu i wypchnięc
 
 ## Podstawowa konfiguracja i pierwszy wpis
 
-### Podstawowa konfiguracja Jekylla
+### Podstawowa konfiguracja Jekyll-Chirpy
 
 Podstawowa konfiguracja zapisana jest w pliku `_config.yml`.
 
@@ -61,7 +74,7 @@ Na początek ustawiamy podstawowe rzeczy, potem możemy zrobić resztę:
 
 ### Tworzenie pierwszego wpisu
 
-Bazujemy na markdownie, więc wpis jest plikiem `.md`. Hello world Jekylla opiszę w osobnym wpisie. Co ciekawe, jest to ten sam markdown co w dokumentacji na GitHubie i w Jupyterze.
+Bazujemy na markdownie, więc wpis jest plikiem `.md`. Hello world Jekylla opiszę w osobnym wpisie. Jest to ten sam markdown co w dokumentacji na GitHubie i w Jupyterze.
 
 ## Serwer lokalny i wypchnięcie na Gita
 
@@ -82,7 +95,7 @@ bundle exec jekyll serve
 
 Blog działa teraz lokalnie pod adresem: [http://127.0.0.1:4000/](http://127.0.0.1:4000/).
 
-Zmiany w plikach są widoczne na bieżąco. Nie wszystkich, ale kluczowych, tj. wpisów (zmiana `_config.yml` wymaga restartu Jekylla).
+Zmiany w plikach są widoczne na bieżąco. Nie wszystkich, ale kluczowych, tj. wpisów. Zmiana `_config.yml` wymaga restartu Jekylla.
 
 ### Wypchnięcie na Gita (commit & push)
 
@@ -101,6 +114,12 @@ W jednej, wygodnej linii:
 git add . && git commit -m "Update local changes" && git push
 ```
 
+Przyjmuję konwencję opisu commitów:
+
+- Nowy wpis: „Add post: file-name-without-date-prefix”
+- Niewielkie zmiany: „Update local changes”
+
+
 ### Dodatkowe automatyzacje workflow
 
 Czyszczenie cache i restart Jekylla (polecenie dla Windows / PowerShell):
@@ -117,3 +136,4 @@ repo + lokalnie → config + post → serwer lokalny + commit&push (GitHub) → 
 gdzie commit&push do repozytorium uruchamiają automatyczny build&deploy w GitHub Pages.
 
 Robię → działa → jest fajnie.
+

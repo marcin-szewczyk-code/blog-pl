@@ -64,10 +64,8 @@ footer:
   theme: Motyw
   copyrights: Wszelkie prawa zastrzeżone
 
-#meta: "Powered by :PLATFORM · Theme: :THEME"
-#meta: "Powered by :PLATFORM · Motyw: :THEME · Polityka prywatności: Google Analytics (GA4)"
+meta: "Generator: :PLATFORM · Motyw: :THEME · Licencja: :COPYRIGHT · Analityka: :PRIVACY"
 
-meta: "Generator: :PLATFORM · Theme: :THEME · :PRIVACY"
 
 #meta:
 #  title: Blog
