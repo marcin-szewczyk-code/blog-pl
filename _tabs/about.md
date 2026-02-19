@@ -22,3 +22,5 @@ Możliwe, że będę tu umieszczał kolejne wpisy w wolnych chwilach.
 >
 > - Strona główna: [https://marcinszewczyk.net](https://marcinszewczyk.net)
 > - Wersja angielska bloga: [https://en.blog.marcinszewczyk.net](https://en.blog.marcinszewczyk.net)
+
+---
