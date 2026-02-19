@@ -1,5 +1,6 @@
 ---
 title: Prawa autorskie i licencja
+description: "Zasady praw autorskich i licencjonowania treści bloga: model „Wszelkie prawa zastrzeżone” dla treści redakcyjnych oraz możliwość odrębnego licencjonowania kodu źródłowego."
 layout: page
 permalink: /legal/
 ---

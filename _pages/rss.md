@@ -1,6 +1,7 @@
 ---
-layout: page
 title: Subskrybuj RSS
+description: "Strona subskrypcji kanału RSS (Atom) bloga: adres feed.xml, instrukcja dodania do czytników RSS oraz przykład wyglądu w aplikacji mobilnej."
+layout: page
 permalink: /rss/
 post_id: rss
 ---
