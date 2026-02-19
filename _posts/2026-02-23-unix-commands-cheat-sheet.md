@@ -15,6 +15,8 @@ Programy, w tym powłoka, korzystają z usług jądra (*kernel services*).
 
 Usługi jądra to funkcjonalności realizowane przez jądro, takie jak odczyt i zapis plików, tworzenie nowych procesów, przydzielanie pamięci, komunikacja z urządzeniami sprzętowymi oraz obsługa potoków i strumieni pomiędzy programami. Programy, w tym powłoka, nie mają bezpośredniego dostępu do sprzętu; zawsze pośredniczy w tym jądro.
 
+Istnieje wiele jąder systemów typu Unix; jednym z nich jest Linux. Linux to wolne jądro typu Unix, stworzone w 1991 roku przez Linusa Torvaldsa, które umożliwiło uruchamianie systemów uniksowych na zwykłych komputerach osobistych.
+
 W tym wpisie przedstawiam mój cheat sheet najczęściej używanych poleceń Uniksa.
 
 ---
