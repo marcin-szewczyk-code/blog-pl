@@ -2,7 +2,7 @@
 title: "Blog Jekyll: Modyfikacja stylu CSS w motywie Chirpy na przykładzie przypiętych wpisów"
 description: "Jak w motywie Chirpy dodać własny plik custom.css i wyróżnić przypięte wpisy bez modyfikowania plików motywu."
 date: 2026-02-23 07:00:00 +0100
-categories: [Blog]
+categories: [Blog Jekyll-Chirpy]
 tags: [jekyll, chirpy, css, config]
 ---
 
