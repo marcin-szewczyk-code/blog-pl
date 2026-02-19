@@ -1,0 +1,19 @@
+---
+---
+
+@use "main" as *;
+
+/* Pinned post card (detected by the thumbtack icon inside) */
+a.post-preview:has(i.fa-thumbtack) {
+  background-color: #f8f9fa;
+  /* border-left: 4px solid #0d6efd; */ /* niebieski */
+  border-left: 4px solid #2563eb; /* chłodny niebieski */
+  padding-left: 1rem;
+  border-radius: 0.5rem;
+}
+
+/* Dark mode */
+[data-mode="dark"] a.post-preview:has(i.fa-thumbtack) {
+  background-color: #1e1e1e;
+  border-left-color: #66b2ff;
+}
