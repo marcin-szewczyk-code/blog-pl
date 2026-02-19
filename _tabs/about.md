@@ -18,7 +18,7 @@ Możliwe, że będę tu umieszczał kolejne wpisy w wolnych chwilach.
 
 ---
 
-> **Więcej informacji**
+> **Więcej informacji o mnie**
 >
 > - Strona główna: [https://marcinszewczyk.net](https://marcinszewczyk.net)
 > - Wersja angielska bloga: [https://en.blog.marcinszewczyk.net](https://en.blog.marcinszewczyk.net)
