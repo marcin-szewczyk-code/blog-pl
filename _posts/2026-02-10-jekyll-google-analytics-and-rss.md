@@ -2,7 +2,7 @@
 title: "Blog Jekyll: Google Analytics i RSS"
 description: "Podłączenie Google Analytics 4 (GA4) i konfiguracja RSS w blogu Jekyll z motywem Chirpy: ustawienia _config.yml, modyfikacja stopki, polityka prywatności oraz własna strona subskrypcji feedu."
 date: 2026-02-10 07:00:00 +0100
-categories: [Blog Jekyll-Chirpy]
+categories: [Blog Jekyll]
 tags: [blog, jekyll, google-analytics, rss, setup]
 ---
 

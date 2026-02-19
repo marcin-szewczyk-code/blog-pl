@@ -2,7 +2,7 @@
 title: "Blog Jekyll: MathJax do wzorów matematycznych LaTeX"
 description: "Jak włączyć MathJax w blogu Jekyll (motyw Chirpy): dodanie skryptu do _includes/head.html oraz użycie wzorów LaTeX inline i display w plikach Markdown."
 date: 2026-02-11 07:00:00 +0100
-categories: [Blog Jekyll-Chirpy]
+categories: [Blog Jekyll]
 tags: [blog, jekyll, latex, setup]
 ---
 
