@@ -1,5 +1,6 @@
 ---
 title: "Blog Jekyll: Konfiguracja bloga w Jekyllu – pliki YAML, HTML i CSS"
+description: "Konfiguracja bloga Jekyll z motywem Chirpy: edycja _config.yml, ustawienia YAML, avatar i favicons, modyfikacje plików HTML/CSS oraz podstawowe dostosowanie struktury strony."
 date: 2026-02-08 07:00:00 +0100
 categories: [Blog]
 tags: [blog, jekyll, setup]

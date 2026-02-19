@@ -1,5 +1,6 @@
 ---
 title: "Blog Jekyll: Ikony w blogu – klasy CSS i Font Awesome"
+description: "Jak działają ikony w motywie Chirpy: Font Awesome jako klasy CSS w HTML oraz prosty skrypt w Pythonie do generowania siatki ikon w Markdownie."
 date: 2026-02-19 07:00:00 +0100
 categories: [Blog]
 tags: [jekyll, font-awesome, css, python]

@@ -1,5 +1,6 @@
 ---
 title: "Blog Jekyll: Jak zbudować blog Jekyll na GitHub Pages"
+description: "Jak zbudować blog Jekyll z motywem Chirpy na GitHub Pages: repozytorium, podstawowa konfiguracja _config.yml, lokalny serwer Jekylla, workflow commit & push oraz automatyczny build w GitHub Actions."
 date: 2026-02-06 07:00:00 +0100
 categories: [Blog]
 tags: [blog, jekyll, setup]

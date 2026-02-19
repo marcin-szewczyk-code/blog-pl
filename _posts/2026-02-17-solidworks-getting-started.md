@@ -1,5 +1,6 @@
 ---
 title: "Tools: SolidWorks – Getting Started"
+description: "SolidWorks od podstaw: materiały szkoleniowe, ścieżki certyfikacyjne (CSWA, CSWP, CSWE), pierwsze uruchomienie programu oraz procedura zdawania egzaminów."
 date: 2026-02-17 07:00:00 +0100
 categories: [Tools]
 tags: [solidworks, cad, getting-started, certification]

@@ -1,5 +1,6 @@
 ---
 title: "Liczba „e”: Z dokładnością do miliona miejsc po przecinku"
+description: "Obliczanie liczby e z szeregu Taylora w języku C, z użyciem GMP do uzyskania miliona cyfr po przecinku."
 date: 2026-02-16 07:00:00 +0100
 categories: [Mathematics]
 tags: [math, e, taylor-series, c, gmp]

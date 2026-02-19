@@ -1,5 +1,6 @@
 ---
 title: "Liczba „e”: Skąd się bierze i dlaczego jest ważna"
+description: "Intuicyjne wyprowadzenie liczby e z definicji pochodnej funkcji wykładniczej."
 date: 2026-02-14 07:00:00 +0100
 categories: [Mathematics]
 tags: [math, e]

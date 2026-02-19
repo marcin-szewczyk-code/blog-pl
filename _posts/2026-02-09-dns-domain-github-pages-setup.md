@@ -1,5 +1,6 @@
 ---
 title: "Blog Jekyll: Konfiguracja domeny i GitHub Pages – DNS, HTTPS i przekierowania"
+description: "Konfiguracja własnej domeny dla bloga Jekyll na GitHub Pages: przekierowanie 301, rekord CNAME w DNS, ustawienie Custom domain oraz włączenie HTTPS."
 date: 2026-02-09 07:00:00 +0100
 categories: [Blog]
 tags: [blog, jekyll, setup]

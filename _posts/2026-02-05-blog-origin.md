@@ -1,5 +1,6 @@
 ---
 title: "Jak powstał ten blog"
+description: "Krótka historia powstania bloga opartego na Jekyllu i motywie Chirpy, hostowanego na GitHub Pages, z treścią tworzoną w Markdown i wersjonowaną w Git."
 date: 2026-02-05 15:00:00 +0100
 categories: [Blog]
 tags: [blog, jekyll, personal]

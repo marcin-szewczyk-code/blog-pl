@@ -1,5 +1,6 @@
 ---
 title: "Środowisko: Windows – dlaczego, co wyłączam i co dodaję"
+description: "Konfiguracja środowiska Windows jako głównego systemu roboczego: co wyłączam dla minimalizmu i koncentracji oraz jakie narzędzia i symulatory instaluję."
 date: 2026-02-12 07:00:00 +0100
 categories: [Environment]
 tags: [windows, environment, setup]

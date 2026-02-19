@@ -1,5 +1,6 @@
 ---
 title: "Web: Pięć modeli generowania HTML – Hello World dawniej i dziś"
+description: "Porównanie pięciu modeli generowania HTML – statyczny HTML, klasyczne i warstwowe SSR, CSR + API oraz SSG – na przykładzie „Hello World” dawniej i dziś."
 date: 2026-02-18 07:00:00 +0100
 categories: [Web]
 tags: [web, html, php, css, js, hello-world]

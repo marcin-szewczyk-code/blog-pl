@@ -1,5 +1,6 @@
 ---
 title: "Blog Jekyll: Jak robić wpisy na blogu – Markdown „Hello World” w Jekyllu"
+description: "Jak tworzyć wpisy w Jekyllu: struktura pliku Markdown, front matter (YAML), konwencja katalogu _posts, organizacja zasobów oraz podstawowe elementy formatowania, kodu i grafiki."
 date: 2026-02-07 07:00:00 +0100
 categories: [Blog]
 tags: [blog, jekyll, hello-world]

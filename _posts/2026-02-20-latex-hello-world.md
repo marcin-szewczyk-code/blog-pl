@@ -1,5 +1,6 @@
 ---
 title: "LaTeX: Hello World – przykład (prawie) minimalny"
+description: "Przykład LaTeX „Hello World” w dwóch wariantach: formalne minimum oraz wersja praktyczna z preambułą, pakietami, sekcjami, wzorami, rysunkiem i bibliografią, wraz z podstawami kompilacji do PDF."
 date: 2026-02-20 07:00:00 +0100
 categories: [LaTeX, Tools]
 tags: [latex, hello-world]
