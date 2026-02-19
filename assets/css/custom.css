@@ -1,0 +1,14 @@
+/* =========================================
+   Custom overrides for Chirpy
+   ========================================= */
+
+/* Pinned post — wykrycie przez ikonę pinezki */
+a.post-preview:has(i.fa-thumbtack) {
+  border-left: 3px solid #6b7280;  /* stonowany szary */
+  padding-left: 1rem;
+}
+
+/* Dark mode */
+[data-mode="dark"] a.post-preview:has(i.fa-thumbtack) {
+  border-left-color: #9ca3af;
+}
