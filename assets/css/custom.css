@@ -1,11 +1,10 @@
 /* =========================================
-   Custom overrides for Chirpy
+   Custom CSS overrides for Chirpy
    ========================================= */
 
 /* Pinned post — wykrycie przez ikonę pinezki */
 a.post-preview:has(i.fa-thumbtack) {
-  border-left: 3px solid #6b7280;  /* stonowany szary */
-  border-left: 3px solid #2563eb;  /* chłodny niebieski */
+  border-left: 3px solid #2563eb;
   padding-left: 1rem;
 }
 
