@@ -1,6 +1,16 @@
-MIT License
+This repository contains two distinct types of material:
+
+1. Source code (including theme files, configuration, layouts, and custom modifications)
+2. Editorial content (including blog posts, articles, and original illustrations)
+
+--------------------------------------------------------------------
+
+SOURCE CODE LICENSE
+
+The source code in this repository is licensed under the MIT License.
 
 Copyright (c) 2021 Cotes Chung
+Copyright (c) 2026 Marcin Szewczyk
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -19,3 +29,16 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+--------------------------------------------------------------------
+
+EDITORIAL CONTENT
+
+All blog posts, written articles, and original illustrations contained in this
+repository are © Marcin Szewczyk.
+
+All rights reserved.
+
+No part of the editorial content may be reproduced, distributed, or modified
+without prior written permission of the author, except as permitted under
+applicable copyright law (including quotation rights).
