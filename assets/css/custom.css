@@ -16,11 +16,6 @@ a.post-preview:has(i.fa-thumbtack) {
 
 /* ==========================================================================
    MPS: Sidebar – CONTACT (title + icons + copyright)
-   Minimal, resilient: only affects #sidebar .sidebar-bottom + mps-* blocks
-   ========================================================================== */
-
-/* ==========================================================================
-   MPS: Sidebar – CONTACT section (simple & resilient)
    ========================================================================== */
 
 /* Title */
@@ -37,6 +32,7 @@ a.post-preview:has(i.fa-thumbtack) {
   color: var(--sidebar-muted-color);
 }
 
+/* Title decorative lines */
 #sidebar .mps-sidebar-contact-title .line {
   flex: 1;
   height: 2px;
@@ -60,7 +56,7 @@ a.post-preview:has(i.fa-thumbtack) {
   margin-top: 0.2rem;
   font-size: 0.9rem;
   opacity: 0.75;
-  color: inherit;
+  color: var(--sidebar-muted-color);
 }
 
 /* 
