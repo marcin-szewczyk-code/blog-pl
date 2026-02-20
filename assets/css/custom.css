@@ -12,3 +12,52 @@ a.post-preview:has(i.fa-thumbtack) {
 [data-mode="dark"] a.post-preview:has(i.fa-thumbtack) {
   border-left-color: #9ca3af;
 }
+
+
+/* ==========================================================================
+   MPS: Sidebar – CONTACT (title + icons + copyright)
+   Minimal, resilient: only affects #sidebar .sidebar-bottom + mps-* blocks
+   ========================================================================== */
+
+/* ==========================================================================
+   MPS: Sidebar – CONTACT section (simple & resilient)
+   ========================================================================== */
+
+/* Title */
+#sidebar .mps-sidebar-contact-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+
+  margin-bottom: 0.5rem;
+
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  color: inherit;
+}
+
+#sidebar .mps-sidebar-contact-title .line {
+  flex: 1;
+  height: 2px;
+  background: currentColor;
+  opacity: 0.45;
+  max-width: 60px;   /* długość kresek */
+}
+
+/* Copyright */
+#sidebar .mps-sidebar-contact-copyright {
+  margin-top: 0.2rem;
+  
+  text-align: center;
+  font-size: 0.9rem;
+  opacity: 0.75;
+  color: inherit;
+
+/* 
+  color: blue !important;
+  color: red !important;
+  */
+}

@@ -57,6 +57,14 @@
     </ul>
   </nav>
 
+  <!-- MPS: CONTACT title -->
+  <div class="mps-sidebar-contact-title w-100">
+    <span class="line"></span>
+    <span class="text">KONTAKT</span>
+    <span class="line"></span>
+  </div>
+
+<!-- MPS: Chirpy icons (unchanged, CONTACT copyright added) -->
   <div class="sidebar-bottom d-flex flex-wrap  align-items-center w-100">
     {% for entry in site.data.contact %}
       {%- assign url = null -%}
@@ -106,7 +114,15 @@
         </a>
       {% endif %}
     {% endfor %}
+
+    <!-- MPS: CONTACT copyright -->
+    <div class="mps-sidebar-contact-copyright w-100">
+      © 2026 Marcin Szewczyk
+    </div>  
+
   </div>
+
   <!-- .sidebar-bottom -->
+
 </aside>
 <!-- #sidebar -->
