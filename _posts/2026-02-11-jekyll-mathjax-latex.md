@@ -128,4 +128,6 @@ e^{i\pi} + 1 &= 0
 $$
 ```
 
+## Podsumowanie
+
 Robię → działa → jest fajnie.

@@ -1,6 +1,6 @@
 ---
-title: "Blog Jekyll: Google Analytics i modyfikacja stopki"
-description: "Podłączenie Google Analytics 4 (GA4) w blogu Jekyll z motywem Chirpy: ustawienia _config.yml, strona z polityką prywatności oraz modyfikacja stopki."
+title: "Blog Jekyll: Google Analytics (GA4) i modyfikacja stopki bloga"
+description: "Podłączenie Google Analytics 4 (GA4) w blogu Jekyll z motywem Chirpy: konfiguracja _config.yml, strona polityki prywatności oraz rozszerzenie stopki bloga."
 date: 2026-02-10 07:00:00 +0100
 categories: [Blog Jekyll]
 tags: [blog, jekyll, google-analytics, rss, setup]
@@ -19,7 +19,7 @@ Kroki w panelu Google:
 - wchodzę na stronę [https://analytics.google.com/](https://analytics.google.com/) i loguję się kontem Google
 - tworzę nowe Property, o nazwie np. `blog.marcinszewczyk.net`, strefa czasowa *Polska*, waluta *PLN*
 - jako platformę wybieram *Web*, URL strony: `https://blog.marcinszewczyk.net`
-- nadaję nazwę strumieniowi danych, np. *Blog*
+- nadaję nazwę strumieniowi danych, np. *Blog PL*
 - kopiuję **Measurement ID**, w formacie: `G-XXXXXXXXXX`
 
 Identyfikator **G-XXXXXXXXXX** jest jedyną informacją z Google Analytics 4 wymaganą przez motyw Chirpy.
@@ -36,6 +36,8 @@ analytics:
   google: 
     id: "G-XXXXXXXXXX" # fill in your Google Analytics ID
 ```
+
+Po zmianie `_config.yml` należy przebudować stronę lokalnie (`bundle exec jekyll serve`) lub wypchnąć zmiany do repozytorium (GitHub Pages uruchomi automatyczny build). Następnie warto wykonać twarde odświeżenie przeglądarki (Ctrl+F5), aby wykluczyć problem z cache.
 
 To wszystko. Motyw **Chirpy** sam generuje odpowiedni kod dla GA4.
 
@@ -94,11 +96,15 @@ meta: "Generator: :PLATFORM · Theme: :THEME · License: :COPYRIGHT · Analytics
 
 Chirpy pozwala dostosować stopkę poprzez skopiowanie pliku `footer.html` z motywu do lokalnego projektu.
 
+Nadpisanie pliku w projekcie powoduje, że Jekyll używa lokalnej wersji zamiast tej z gema.
+
 Najpierw sprawdzam lokalną ścieżkę do motywu Chirpy:
 
 ```bash
 bundle info jekyll-theme-chirpy
 ```
+
+Ścieżka zależy od zainstalowanej wersji motywu.
 
 Następnie kopiuję plik stopki `_includes/footer.html` z motywu do projektu:
 
@@ -146,15 +152,13 @@ Powyżej tego kodu dodaję definicję zmiennych `_privacy` i `_license`:
 ```
 {% endraw %}
 
-Efektem jest zmodyfikowana stopka bloga:
-  
-<!--
+Efektem jest zmodyfikowana stopka bloga, generowana zgodnie z aktualnym językiem (Rys. 1 i Rys. 2).
+
 ![Stopka bloga w języku polskim](/assets/posts/jekyll-google-analytics/footer-pl.png)
 ***Rys. 1.** Stopka bloga w języku polskim.*
 
 ![Stopka bloga w języku angielskim](/assets/posts/jekyll-google-analytics/footer-en.png)
 ***Rys. 2.** Stopka bloga w języku angielskim.*
--->
 
 ## Test zbierania danych
 
@@ -164,7 +168,7 @@ Na koniec testuję w panelu Google Analytics (Reports → Realtime).
 
 Na tym etapie blog:
 - zbiera statystyki (GA4)
-- udostępnia feed RSS
+- udostępnia feed RSS (skonfigurowany wcześniej)
 - pozostaje w pełni statyczny
 
 Czyli jest fajnie.

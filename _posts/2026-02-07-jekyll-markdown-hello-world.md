@@ -27,7 +27,7 @@ Na początku jest front matter (nagłówek), który zawiera metadane rozpoznawan
 ```yaml
 ---                                      # Początek front matter
 title: "Hello-world markdown for Jekyll" # Wyświetlany jako nagłówek strony
-post_id: jekyll-markdown-hello-world     # Własny identyfikator wpisu (niestandardowe pole, używam do rysunków)
+description: "Przykład struktury front matter (YAML) w Jekyllu z omówieniem podstawowych pól."
 date: 2026-02-06 08:00:00 +0100          # Data i godzina publikacji wpisu; Jekyll używa jej do sortowania i publikacji
 categories: [Blog]                       # Kategoria wpisu (lub lista kategorii)
 tags: [blog, jekyll]                     # Lista tagów do oznaczania tematów wpisu i późniejszego filtrowania
@@ -37,12 +37,6 @@ tags: [blog, jekyll]                     # Lista tagów do oznaczania tematów w
 ### Konwencja struktury katalogów
 
 Wpisy umieszczam w katalogu "specjalnym" Jekylla `_posts`, nazwa pliku to np. `2026-02-07-jekyll-markdown-hello-world.md`.
-
-W każdym wpisie używam pola `post_id`, np.:
-
-```yaml
-post_id: jekyll-markdown-hello-world
-```
 
 Wszystkie materiały powiązane z danym wpisem trzymam w osobnym katalogu:
 
@@ -58,7 +52,7 @@ assets/
 
 W tym katalogu umieszczam wszystkie pliki dotyczące wpisu: grafiki, pliki PDF, dane pomocnicze itp.
 
-W treści wpisu odwołuję się do nich przez ścieżkę budowaną z użyciem `post-id`, np. (bez "!"):
+W treści wpisu odwołuję się do nich przez ścieżkę:
 
 {% raw %}
 ```markdown

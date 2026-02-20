@@ -1,6 +1,6 @@
 ---
 title: "Blog Jekyll: Strona subskrypcji feedu RSS w motywie Chirpy"
-description: "Konfiguracja RSS w Jekyll (Chirpy): własna strona /rss/, modyfikacja topbara i stopki."
+description: "Konfiguracja RSS w Jekyll (Chirpy): własna strona /rss/, modyfikacja panelu bocznego i topbara."
 date: 2026-02-09 07:00:00 +0100
 categories: [Blog Jekyll]
 tags: [blog, jekyll, google-analytics, rss, setup]
@@ -35,10 +35,10 @@ Dodatkowo można umieścić ikonkę „Subskrybuj RSS” w różnych miejscach i
 
 U mnie umieściłem ją:
 
-- w stopce bloga (footer), przez dodanie kodu HTML do pliku `_includes/footer.html`
+- w panelu bocznym bloga (sidebar), przez dodanie kodu HTML do pliku `_includes/sidebar.html`
 - w górnym pasku nawigacyjnym (topbar), przez dodanie kodu HTML do pliku `_includes/topbar.html`
 
-Pliki `_includes/footer.html` i `_includes/topbar.html` skopiowałem z gema standardową metodą.
+Pliki `_includes/sidebar.html` i `_includes/topbar.html` skopiowałem z gema standardową metodą.
 
 Najpierw sprawdzenie ścieżki do gema:
 
@@ -49,22 +49,23 @@ bundle show jekyll-theme-chirpy
 Następnie skopiowanie plików:
 
 ```bash
-copy "E:\Ruby34-x64\lib\ruby\gems\3.4.0\gems\jekyll-theme-chirpy-7.4.1\_includes\footer.html" "_includes\footer.html"
+copy "E:\Ruby34-x64\lib\ruby\gems\3.4.0\gems\jekyll-theme-chirpy-7.4.1\_includes\sidebar.html" "_includes\sidebar.html"
 copy "E:\Ruby34-x64\lib\ruby\gems\3.4.0\gems\jekyll-theme-chirpy-7.4.1\_includes\topbar.html" "_includes\topbar.html"
 ```
 
 Od tego momentu lokalne wersje plików nadpisują wersje z gema i można je modyfikować.
 
-### Kod w stopce (`_includes/footer.html`)
+### Kod w panelu bocznym (_includes/sidebar.html)
 
 Dodałem:
 
 ```html
-<span class="ms-3">
-  <a href="/rss/">
-    <i class="fas fa-rss"></i> Subskrybuj RSS
-  </a>
-</span>
+<a class="text-muted text-decoration-none"
+  href="{{ '/rss/' | relative_url }}"
+    aria-label="Subskrybuj RSS"
+    title="Subskrybuj RSS">RSS
+  <i class="fas fa-rss"></i>
+</a>
 ```
 
 ### Kod w topbarze (`_includes/topbar.html`)
@@ -102,7 +103,7 @@ Przy czym ten ostatni fragment kodu wstawiłem w dwóch miejscach:
 
 ### Strona „Subskrybuj RSS”
 
-Linki, które wstawiłem do plików `_includes/footer.html` i `_includes/topbar.html`, nie wskazują na surowy feed (dostępny domyślnie pod adresem [https://blog.marcinszewczyk.net/feed.xml](https://blog.marcinszewczyk.net/feed.xml)), tylko na stronę `_pages/rss.md`.
+Linki, które wstawiłem do plików `_includes/sidebar.html` i `_includes/topbar.html`, nie wskazują na surowy feed (dostępny domyślnie pod adresem [https://blog.marcinszewczyk.net/feed.xml](https://blog.marcinszewczyk.net/feed.xml)), tylko na stronę `_pages/rss.md`.
 
 Stronę tę stworzyłem umieszczając plik `rss.md` w katalogu `_pages/`.
 

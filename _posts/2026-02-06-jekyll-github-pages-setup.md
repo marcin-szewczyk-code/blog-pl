@@ -80,7 +80,7 @@ Bazujemy na markdownie, więc wpis jest plikiem `.md`. Hello world Jekylla opisz
 
 ### Uruchomienie serwera lokalnego (local build & preview)
 
-Jekyll jest napisany w Ruby, tak jak cały GitHub. Potrzebuje więc Ruby i gemów.
+Jekyll jest napisany w Ruby, tak jak cały GitHub. Potrzebuje więc Ruby i gemów (bibliotek).
 
 Instaluję zależności:
 
@@ -131,8 +131,7 @@ rmdir /s /q .jekyll-cache & rmdir /s /q _site & bundle exec jekyll serve
 
 ## Podsumowanie
 
-Całość sprowadza się do workflow:
-repo + lokalnie → config + post → serwer lokalny + commit&push (GitHub) → build&deploy (GitHub Pages),
+Całość sprowadza się do workflow: repo + lokalnie → config + post → serwer lokalny + commit&push (GitHub) → build&deploy (GitHub Pages),
 gdzie commit&push do repozytorium uruchamiają automatyczny build&deploy w GitHub Pages.
 
 Robię → działa → jest fajnie.
