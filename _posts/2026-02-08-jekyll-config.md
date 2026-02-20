@@ -6,9 +6,9 @@ categories: [Blog Jekyll]
 tags: [blog, jekyll, setup]
 ---
 
-Kolejny krok budowy bloga to konfiguracja ustawień Jekylla. W Jekyllu większość konfiguracji to edycja plików YAML, a w niektórych przypadkach także HTML i CSS.
+Kolejny krok budowy bloga to konfiguracja ustawień Jekylla i motywu Chirpy. Podstawowa konfiguracja to edycja plików YAML. Dalsze konfiguracje można przeprowadzić przez zmiany w plikach HTML motywu oraz dodanie własnych stylów CSS.
 
-## Podstawowa konfiguracja Jekylla (_config.yml)
+## Podstawowa konfiguracja: plik _config.yml
 
 Podstawowa konfiguracja jest w pliku `_config.yml`:
 
@@ -38,12 +38,108 @@ social:
     - https://www.ee.pw.edu.pl/~szewczyk/          # strona akademicka
 ```
 
-Zmiana pliku `_config.yml` wymaga zatrzymania (`Ctrl-C`) i restartu serwera Jekylla:
+Zmiana pliku `_config.yml` wymaga zatrzymania (`Ctrl-C`) i ponownego uruchomienia serwera Jekylla:
  
 ```bash
 Ctrl-C
 bundle exec jekyll serve
 ```
+
+## Dostosowanie motywu przez zmianę HTML i CSS
+
+### Modyfikacja plików HTML
+
+Istotne są zwłaszcza pliki motywu `_includes/*.html`.
+
+Jekyll nadpisuje pliki motywu ich odpowiednikami o tej samej nazwie i ścieżce w projekcie.
+
+Jeśli korzystasz z wersji gem-based Chirpy, pliki `_includes/*.html` pochodzą z motywu i nie są one widoczne w repozytorium.
+
+Można je nadpisać, a następnie zmodyfikować, postępując w następujący sposób:
+
+1.  Należy otworzyć repozytorium motywu (jekyll-theme-chirpy).
+2.  Skopiować plik z motywu, który chcemy modyfikować, np.: `_includes/head.html`, `_includes/footer.html`, `_includes/topbar.html`, `_includes/sidebar.html`.
+3.  Umieścić go w swoim projekcie, w katalogu `_includes/`
+4.  Wprowadzić modyfikacje, uruchomić ponownie jekyll lub zrobić commit i push do gita
+
+### W jaki sposób skopiować pliki motywu
+
+Pliki `_includes/*.html` można skopiować bezpośrednio z katalogu gema motywu.
+
+Najpierw sprawdzenie ścieżki do gema:
+
+```bash
+bundle show jekyll-theme-chirpy
+```
+
+Następnie skopiowanie wybranych plików:
+
+```bash
+copy "E:\Ruby34-x64\lib\ruby\gems\3.4.0\gems\jekyll-theme-chirpy-7.4.1\_includes\head.html" "_includes\head.html"
+copy "E:\Ruby34-x64\lib\ruby\gems\3.4.0\gems\jekyll-theme-chirpy-7.4.1\_includes\footer.html" "_includes\footer.html"
+copy "E:\Ruby34-x64\lib\ruby\gems\3.4.0\gems\jekyll-theme-chirpy-7.4.1\_includes\topbar.html" "_includes\topbar.html"
+copy "E:\Ruby34-x64\lib\ruby\gems\3.4.0\gems\jekyll-theme-chirpy-7.4.1\_includes\sidebar.html" "_includes\sidebar.html"
+```
+
+Od tego momentu lokalne wersje plików nadpisują wersje z gema i można je modyfikować.
+
+Opiszę to poniżej na moich przykładach, zaczynając od modyfikacji pliku `_includes/head.html`, która umożliwia nadpisanie istniejącego lub wprowadzenie własnego stylu CSS.
+
+### Modyfikacja stylu CSS
+
+Wygląd bloga określany stylami CSS można modyfikować przez dodanie własnego pliku CSS (np. assets/css/custom.css). Następnie należy załadować go w `_includes/head.html` po CSS motywu, aby nadpisać jego style.
+
+W pliku:
+
+``` text
+_includes/head.html
+```
+
+należy znaleźć sekcję:
+
+``` html
+<!-- Theme style -->
+<link rel="stylesheet" href="{{ '/assets/css/:THEME.css' | replace: ':THEME', site.theme | relative_url }}">
+```
+
+Bezpośrednio pod nią dodać:
+
+``` html
+<!-- Custom overrides -->
+<link rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}">
+```
+
+Ważne: styl musi być ładowany **po** CSS motywu, aby nadpisania działały.
+
+## Moje zmiany HTML i CSS
+
+W kolejnych wpisach opisuję zmiany zastosowane w tym blogu:
+
+1. W pliku `head.html` dodaję:
+- Linię `<link rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}">`, która włącza plik `/assets/css/custom.css` z moimi stylami. Opisałem to przy okazji dostosowania przypiętego postu i sidebaru.
+- JavaScript (`.js`) realizujący funkcję bibliteki MathJax do renderowania wzorów matematycznych przy pomocy składni LaTeX.
+2. W pliku stopki `_includes/footer.html`
+- Edycja stopki z linkami do Google Analitics i licencji -- opisałem to przy okazji konfiguracji Google Analytics.
+3. W pliku nagłówka `_includes/topbar.html`
+- Dodanie linku do strony Subskrybuj RSS -- opisałem to przy okazji konfiguracji RSS
+4. W pliku panelu bocznego `_includes/sidebar.html`
+- Dodanie przełącznika light/dark, PL \| EN oraz RSS -- opisałem to w osobnym wpisie
+- Dodanie elementów wokół ikon z linkami w dole panelu bocznego -- opisałem to w osobnym wpisie
+
+## Zmiany w stylu CSS – plik assets/css/custom.css
+
+Najważniejsze zmiany jakie wprowadziłem w motywie Chirpy przez plik `assets/css/custom.css`:
+
+- Wygląd przypiętego postu (pinned post) -- opisałem to w osobnym wpisie
+- Wygląd elementów wokół ikon z linkami w dole panelu bocznego -- opisałem to w osobnym wpisie
+
+## Inne zmiany
+
+Edycja menu w panelu bocznym `_includes/sidebar.html` (Kategorie, Tagi, Archiwum, O mnie) robiona jest poprzez pliki w katalogu `_tabs`. Na przykład usunięcie pliku `_tabs/tags.md` powoduje usunięcie pozycji *Tags* z panelu bocznego. Można też dodawać dodatkowe elementy tego menu.
+
+Awatar to wgranie zdjęcia do katalogu `/assets/img`, a następnie wskazanie jego ścieżki w `_config.yml`. Zalecane wymiary zdjęcia to np. 512×512 px.
+
+Polska wersja językowa to plik `pl.yml` w katalogu `_data/locales` i wpis `lang: pl` w `_config.yml`.
 
 ## Grafiki
 
@@ -74,7 +170,7 @@ Opcja ``-gravity center`` zapewnia centralne kadrowanie przed zmianą rozmiaru.
 
 ### Favicons
 
-Favicons można wygenerować np. w serwisie: [https://realfavicongenerator.net/](https://realfavicongenerator.net/).
+Favicons można wygenerować np. w serwisie **RealFaviconGenerator**: [https://realfavicongenerator.net/](https://realfavicongenerator.net/).
 
 Po wygenerowaniu pliki należy wgrać do katalogu:
 
@@ -98,27 +194,17 @@ assets/
 
 Jeśli generator tworzy plik `favicon-96x96.png`, należy zmienić jego nazwę na `favicon-32x32.png`, żeby była zgodna z wymaganiami motywu Chirpy.
 
-## Dodatkowe elementy konfiguracji
-
-### Dostosowanie motywu i struktury strony
-
-Edycja menu po lewej stronie (Kategorie, Tagi, Archiwum, O mnie) robiona jest poprzez pliki w katalogu `_tabs`. Na przykład usunięcie pliku `_tabs/tags.md` powoduje usunięcie *Tags* z lewego menu. Można też dodawać dodatkowe elementy tego menu.
-
-Awatar to wgranie zdjęcia do katalogu `/assets/img`, a następnie wskazanie jego ścieżki w `_config.yml`. Zdjęcie o wymiarach na przykład 512x512.
-
-Polska wersja językowa to plik `pl.yml` w katalogu `_data/locales` i wpis `lang: pl` w `_config.yml`.
-
-Ciekawy jest też sposób dodania pliku `_includes/head.html` i umieszczenia w nim kodu JavaScript (`.js`). Opisałem to przy okazji konfiguracji wzorów matematycznych LaTeX przy użyciu biblioteki MathJax. Podobnie w innym wpisie opisałem plik `_includes/footer.html`.
-
 ### Skrót w telefonie
 
-Można utworzyć ikonę na ekranie telefonu (np. iPhone’a), która otwiera blog w trybie pełnoekranowym jak aplikację.
-
-Można też zrobić ikonę na ekranie np. iPhone’a, która otwiera blog jak aplikację (warunek:strona musi działać przez **HTTPS**).
+Można utworzyć ikonę na ekranie telefonu (np. iPhone’a), która otwiera blog w trybie pełnoekranowym jak aplikację (warunek: strona musi działać przez **HTTPS**).
 
 W Safari:
 - wchodzę na `https://blog.marcinszewczyk.pl`
 - wybieram ikonę *Share* (kwadrat ze strzałką w górę)
 - wybieram „Dodaj do ekranu początkowego”
 
-Jako ikona używana jest plik `/assets/img/favicons/apple-touch-icon.png` (zalecany rozmiar 180x180 px). Jeżeli plik nie istnieje, iOS wygeneruje ikonę automatycznie (zrzut strony).
+Jako ikona używany jest plik `/assets/img/favicons/apple-touch-icon.png` (zalecany rozmiar 180x180 px). Jeżeli plik nie istnieje, iOS wygeneruje ikonę automatycznie (zrzut strony).
+
+## Podsumowanie
+
+Na początku może to wyglądać na skomplikowane. Wystarczy jednak kilka drobnych zmian i wszystko działa. Po konfiguracji jest tak, jak trzeba.

@@ -34,7 +34,7 @@ a.post-preview:has(i.fa-thumbtack) {
   letter-spacing: 0.08em;
   text-transform: uppercase;
   font-size: 0.9rem;
-  color: inherit;
+  color: var(--sidebar-text-color);
 }
 
 #sidebar .mps-sidebar-contact-title .line {
