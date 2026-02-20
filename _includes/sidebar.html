@@ -65,7 +65,9 @@
   </div>
 
 <!-- MPS: Chirpy icons (unchanged, CONTACT copyright added) -->
-  <div class="sidebar-bottom d-flex flex-wrap  align-items-center w-100">
+  <!-- zastępuję: <div class="sidebar-bottom d-flex flex-wrap  align-items-center w-100"> -->
+  <!-- przez: <div class="sidebar-bottom mps-contact-bottom d-flex flex-wrap align-items-center w-100"> -->
+ <div class="sidebar-bottom mps-contact-bottom d-flex flex-wrap align-items-center w-100">
     {% for entry in site.data.contact %}
       {%- assign url = null -%}
 
@@ -116,7 +118,7 @@
     {% endfor %}
 
     <!-- MPS: CONTACT copyright -->
-    <div class="mps-sidebar-contact-copyright w-100">
+    <div class="mps-sidebar-contact-copyright"> <!-- w-100 -->
       © 2026 Marcin Szewczyk
     </div>  
 

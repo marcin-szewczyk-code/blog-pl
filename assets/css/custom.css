@@ -29,9 +29,7 @@ a.post-preview:has(i.fa-thumbtack) {
   align-items: center;
   justify-content: center;
   gap: 0.6rem;
-
   margin-bottom: 0.5rem;
-
   font-weight: 600;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -44,20 +42,28 @@ a.post-preview:has(i.fa-thumbtack) {
   height: 2px;
   background: currentColor;
   opacity: 0.45;
-  max-width: 60px;   /* długość kresek */
+  max-width: 60px;
 }
 
-/* Copyright */
-#sidebar .mps-sidebar-contact-copyright {
+/* Center this specific sidebar-bottom block */
+#sidebar .mps-contact-bottom {
+  justify-content: center !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+/* Copyright in this block */
+#sidebar .mps-contact-bottom .mps-sidebar-contact-copyright {
+  flex: 0 0 100% !important;
+  width: 100% !important;
+  text-align: center !important;
   margin-top: 0.2rem;
-  
-  text-align: center;
   font-size: 0.9rem;
   opacity: 0.75;
   color: inherit;
+}
 
 /* 
   color: blue !important;
   color: red !important;
   */
-}
