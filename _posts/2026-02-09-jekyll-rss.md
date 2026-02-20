@@ -1,5 +1,5 @@
 ---
-title: "Blog Jekyll: Subskrypcja RSS i modyfikacja panelu bocznego oraz górnego paska"
+title: "Blog Jekyll: Subskrypcja RSS i modyfikacja panelu bocznego oraz topbara"
 description: "Konfiguracja RSS w Jekyll (Chirpy): własna strona /rss/, modyfikacja panelu bocznego i topbara."
 date: 2026-02-09 07:00:00 +0100
 categories: [Blog Jekyll]
