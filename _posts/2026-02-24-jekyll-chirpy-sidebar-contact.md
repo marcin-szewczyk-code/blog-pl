@@ -1,5 +1,5 @@
 ---
-title: "Blog Jekyll: Modyfikacja CSS w motywie Chirpy – stopka w sidebarze"
+title: "Blog Jekyll: Stopka sidebaru w motywie Chirpy – CSS"
 description: "Jak w motywie Chirpy dodać stopkę w sidebarze."
 date: 2026-02-24 07:00:00 +0100
 categories: [Blog Jekyll]
