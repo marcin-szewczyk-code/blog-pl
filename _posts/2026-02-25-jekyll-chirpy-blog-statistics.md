@@ -19,7 +19,7 @@ Pomyślałem, że dodam w prawej kolumnie panel ze statystykami bloga:
 
 Efekt końcowy wygląda tak:
 
-![Statystyki bloga](/assets/posts/jekyll-chirpy-blog-statistics/jekyll-chirpy-blog-statistics-pl.png)
+![Statystyki bloga](/assets/posts/jekyll-chirpy-blog-statistics/blog-statistics-pl.png)
 ***Fig. 1.** Statystyki bloga.*
 
 Dodatkowo w jednym z wpisów umieściłem dynamiczną informację:
