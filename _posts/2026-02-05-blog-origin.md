@@ -21,4 +21,20 @@ Blog umożliwia [Subskrypcję RSS](/rss/), ma dwie wersje językowe ([PL](https:
 
 Informacje o mnie znajdują się w sekcji [O mnie](/about/).
 
-Ciekaw jestem, czy będę tu umieszczał wpisy w wolnych chwilach.
+{% assign count = site.posts | size %}
+{% assign mod100 = count | modulo: 100 %}
+{% assign mod10 = count | modulo: 10 %}
+
+{% if count == 1 %}
+  {% assign suffix = "wpis" %}
+{% elsif mod100 >= 12 and mod100 <= 14 %}
+  {% assign suffix = "wpisów" %}
+{% elsif mod10 >= 2 and mod10 <= 4 %}
+  {% assign suffix = "wpisy" %}
+{% else %}
+  {% assign suffix = "wpisów" %}
+{% endif %}
+
+Ten blog ma już **{{ count }} {{ suffix }}**.
+
+Ciekaw jestem, czy będę tu umieszczał kolejne wpisy w wolnych chwilach.
