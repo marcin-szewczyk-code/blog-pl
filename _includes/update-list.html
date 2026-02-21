@@ -26,30 +26,42 @@
 
   <!-- MPS: Blog stats panel -->
   <section id="access-stats">
-  <h2 class="panel-heading">Statystyki bloga</h2>
+    <h2 class="panel-heading">Statystyki bloga</h2>
 
-  {% assign posts_count = site.posts | size %}
-  {% assign tags_count = site.tags | size %}
-  {% assign categories_count = site.categories | size %}
+    {% assign posts_count = site.posts | size %}
+    {% assign tags_count = site.tags | size %}
+    {% assign categories_count = site.categories | size %}
 
-  <ul class="content list-unstyled ps-0 pb-1 ms-1 mt-2">
-    <li class="lh-lg d-flex justify-content-between">
-      <span>Wpisy</span>
-      <span><strong>{{ posts_count }}</strong></span>
-    </li>
+    {% assign total_words = 0 %}
+    {% for post in site.posts %}
+      {% assign words = post.content | number_of_words %}
+      {% assign total_words = total_words | plus: words %}
+    {% endfor %}
+    {% assign total_minutes = total_words | divided_by: 200 %}
 
-    <li class="lh-lg d-flex justify-content-between">
-      <span>Kategorie</span>
-      <span><strong>{{ categories_count }}</strong></span>
-    </li>
+    <ul class="content list-unstyled ps-0 pb-1 ms-1 mt-2">
+      <li class="lh-lg d-flex justify-content-between">
+        <span>Wpisy</span>
+        <span><strong>{{ posts_count }}</strong></span>
+      </li>
 
-    <li class="lh-lg d-flex justify-content-between">
-      <span>Tagi</span>
-      <span><strong>{{ tags_count }}</strong></span>
-    </li>
-  </ul>
-</section>
-<!-- #access-stats -->
+      <li class="lh-lg d-flex justify-content-between">
+        <span>Kategorie</span>
+        <span><strong>{{ categories_count }}</strong></span>
+      </li>
+
+      <li class="lh-lg d-flex justify-content-between">
+        <span>Tagi</span>
+        <span><strong>{{ tags_count }}</strong></span>
+      </li>
+
+      <li class="lh-lg d-flex justify-content-between">
+        <span>Czas czytania</span>
+        <span><strong>{{ total_minutes }}</strong> min</span>
+      </li>
+    </ul>
+  </section>
+  <!-- #access-stats -->
 
   <section id="access-lastmod">
     <h2 class="panel-heading">{{- site.data.locales[include.lang].panel.lastmod -}}</h2>
