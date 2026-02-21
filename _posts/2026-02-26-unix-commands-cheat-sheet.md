@@ -7,7 +7,7 @@ tags: [unix, shell, commands, cheat-sheet, pipes]
 ---
 
 
-System Unix zbudowany jest z jądra (*kernel*) oraz przestrzeni użytkownika (*user space*). Jądro zarządza zasobami systemu (procesami, pamięcią, systemem plików i urządzeniami) oraz udostępnia programom interfejs wywołań systemowych (*system calls*). Za pomocą *system calls* programy żądają od jądra wykonania określonych operacji systemowych, takich jak `read()`, `write()`, `fork()` czy `exec()`.
+Unix zbudowany jest z jądra (*kernel*) oraz przestrzeni użytkownika (*user space*). Jądro zarządza zasobami systemu (procesami, pamięcią, systemem plików i urządzeniami) oraz udostępnia programom interfejs wywołań systemowych (*system calls*). Za pomocą *system calls* programy żądają od jądra wykonania określonych operacji systemowych, takich jak `read()`, `write()`, `fork()` czy `exec()`.
 
 W przestrzeni użytkownika działają powłoka (*shell*) oraz programy. Powłoka jest specjalnym programem – interpreterem poleceń: przyjmuje komendy użytkownika (z terminala lub z GUI) i na ich podstawie inicjuje w jądrze uruchamianie procesów poprzez odpowiednie system calls.
 
