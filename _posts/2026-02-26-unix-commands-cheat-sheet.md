@@ -6,6 +6,11 @@ categories: [Unix]
 tags: [unix, shell, commands, cheat-sheet, pipes]
 ---
 
+W tym wpisie przedstawiam mój cheat sheet najczęściej używanych poleceń Uniksa.
+
+---
+
+## Kilka słów o Uniksie
 
 Unix zbudowany jest z jądra (*kernel*) oraz przestrzeni użytkownika (*user space*). Jądro zarządza zasobami systemu (procesami, pamięcią, systemem plików i urządzeniami) oraz udostępnia programom interfejs wywołań systemowych (*system calls*). Za pomocą *system calls* programy żądają od jądra wykonania określonych operacji systemowych, takich jak `read()`, `write()`, `fork()` czy `exec()`.
 
@@ -15,9 +20,7 @@ Programy, w tym powłoka, korzystają z usług jądra (*kernel services*).
 
 Usługi jądra to funkcjonalności realizowane przez jądro, takie jak odczyt i zapis plików, tworzenie nowych procesów, przydzielanie pamięci, komunikacja z urządzeniami sprzętowymi oraz obsługa potoków i strumieni pomiędzy programami. Programy, w tym powłoka, nie mają bezpośredniego dostępu do sprzętu; zawsze pośredniczy w tym jądro.
 
-Istnieje wiele jąder systemów typu Unix, jednym z nich jest Linux. Linux to wolne jądro typu Unix, stworzone w 1991 roku przez Linusa Torvaldsa, które umożliwiło uruchamianie systemów uniksowych na zwykłych komputerach osobistych.
-
-W tym wpisie przedstawiam mój cheat sheet najczęściej używanych poleceń Uniksa.
+Istnieje wiele jąder systemów typu Unix, jednym z nich jest Linux. Linux to wolne jądro typu Unix, stworzone w 1991 roku przez studenta Linusa Torvaldsa, które umożliwiło uruchamianie systemów uniksowych na zwykłych komputerach osobistych.
 
 ---
 
