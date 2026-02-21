@@ -17,7 +17,7 @@ Ten blog to miejsce na moje notatki o kodach, matematyce i symulacjach.
 
 Najłatwiej przejrzeć zawartość bloga przez sekcje [Kategorie](/categories/) lub [Archiwum](/archives/).
 
-Blog umożliwia [Subskrypcję RSS](/rss/), ma dwie wersje językowe ([PL](https://blog.marcinszewczyk.net/) \| [EN](https://en.blog.marcinszewczyk.net/)) i oraz przełącznik motywu (jasny/ciemny) w nagłówku.
+Blog umożliwia [Subskrypcję RSS](/rss/), ma dwie wersje językowe ([PL](https://blog.marcinszewczyk.net/) \| [EN](https://en.blog.marcinszewczyk.net/)) i przełącznik motywu (jasny/ciemny) w nagłówku.
 
 Informacje o mnie znajdują się w sekcji [O mnie](/about/).
 
