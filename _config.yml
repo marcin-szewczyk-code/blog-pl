@@ -35,7 +35,7 @@ timezone: "Europe/Warsaw"
 
 title: "Marcin Szewczyk"
 tagline: "Notatki i zapiski. Kody, matematyka, symulacje." # it will display as the subtitle
-description: Notatki o kodzie, matematyce, symulacjach i budowie bloga w Jekyllu na GitHubie. # used by seo meta and the atom feed
+description: Blog techniczny o narzędziach inżynierskich CAD/FEM/EMT: SolidWorks, ANSYS, COMSOL, PSCAD, EMTP. Symulacje, matematyka i programowanie. # used by seo meta and the atom feed
 
 #description: >- # used by seo meta and the atom feed
 #  Notatki i zapiski o programowaniu, matematyce i budowie bloga w Jekyllu.
