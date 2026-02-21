@@ -1,7 +1,7 @@
 ---
 title: "Unix: Polecenia powłoki – Cheat Sheet (ściąga)"
 description: "Cheat sheet najczęściej używanych poleceń Uniksa z przykładami pracy ze strumieniami i potokami."
-date: 2026-02-25 07:00:00 +0100
+date: 2026-02-26 07:00:00 +0100
 categories: [Unix]
 tags: [unix, shell, commands, cheat-sheet, pipes]
 ---
