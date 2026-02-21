@@ -128,4 +128,4 @@ Panel generowany jest podczas budowy strony przez Jekylla poprzez wykonanie kodu
 
 Rozwiązanie jest proste, czyste i w pełni zgodne z filozofią statycznego generatora stron.
 
-To jest po prostu proste. I to jest super.
+To jest po prostu proste, i to jest super.
