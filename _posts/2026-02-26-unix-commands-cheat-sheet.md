@@ -6,7 +6,7 @@ categories: [Unix]
 tags: [unix, shell, commands, cheat-sheet, pipes]
 ---
 
-W tym wpisie przedstawiam mój cheat sheet najczęściej używanych poleceń Uniksa.
+W tym wpisie przedstawiam mój cheat sheet najczęściej używanych poleceń Uniksa. Wykonany w ciekawym szablonie LaTeX, co pewnie też w przyszłości opiszę.
 
 ---
 
