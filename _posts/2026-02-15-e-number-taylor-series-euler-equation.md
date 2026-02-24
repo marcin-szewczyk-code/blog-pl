@@ -14,7 +14,8 @@ $$
 
 O tym wzorze R.P. Feynman w swoich *Wykładach* napisał, że jest to ,,najwspanialszy wzór matematyki'' (,,the most remarkable formula in mathematics''). Z niego bierze się wiele rzeczy, a z ciekawostek również to, że dla $x=\pi$ dostajemy słynną tożsamość $e^{i\pi}+1=0$, wiążącą pięć wielkich liczb matematyki.
 
-> **Źródło** Ten wpis jest dostosowanym do bloga rozdziałem mojej książki: M. Szewczyk, *[Metody analityczne w obliczeniach procesów łączeniowych w systemie elektroenergetycznym](https://www.sklep.pw.edu.pl/produkty/metody-analityczne-w-obliczeniach-procesow-laczeniowych-w-systemie-elektroenergetycznym)*, OWPW 2024. A bardziej u źródła, również pięknej książki: Fichtenholz G. *Rachunek różniczkowy i całkowy*, Tom II. PWN, Warszawa, 1965. Tytuł oryginału: Г. М. Фихтенгольц, *Григорий Михайлович Фихтенгольц: Курс дифференциального и интегрального исчисления*, Москва-Ленинград 1958.
+> Ten wpis jest dostosowanym do bloga rozdziałem mojej książki: M. Szewczyk, *[Metody analityczne w obliczeniach procesów łączeniowych w systemie elektroenergetycznym](https://www.sklep.pw.edu.pl/produkty/metody-analityczne-w-obliczeniach-procesow-laczeniowych-w-systemie-elektroenergetycznym)*, OWPW 2024. A bardziej u źródła, również pięknej książki: Fichtenholz G. *Rachunek różniczkowy i całkowy*, Tom II. PWN, Warszawa, 1965. Tytuł oryginału: Г. М. Фихтенгольц, *Григорий Михайлович Фихтенгольц: Курс дифференциального и интегрального исчисления*, Москва-Ленинград 1958.
+{: .prompt-info }
 
 ## Szereg Taylora
 

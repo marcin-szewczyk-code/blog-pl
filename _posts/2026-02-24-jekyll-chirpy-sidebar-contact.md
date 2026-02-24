@@ -6,7 +6,7 @@ categories: [Blog Jekyll]
 tags: [jekyll, chirpy, css, html, config]
 ---
 
-Spodobał mi się element u dołu sidebaru z motywu motywu [Flexible Jekyll](https://github.com/artemsheludko/flexible-jekyll), więc go zrobiłem. Wymagało to modyfikacji `_includes/sidebar.html` i dodania kilku klas i reguł CSS do `assets/css/custom.css`.
+Spodobał mi się element u dołu sidebaru z motywu motywu [Flexible Jekyll](https://github.com/artemsheludko/flexible-jekyll), więc go dodałem do mojego Chirpy. Wymagało to modyfikacji `_includes/sidebar.html` i dodania kilku klas i reguł CSS do `assets/css/custom.css`.
 
 
 ![Stopka w sidebarze](/assets/posts/jekyll-chirpy-sidebar-contact/sidebar-contact-pl.png)
