@@ -63,3 +63,22 @@ a.post-preview:has(i.fa-thumbtack) {
   color: blue !important;
   color: red !important;
   */
+
+/* ==========================================================================
+   MPS: Show Home icon only on mobile
+   ========================================================================== */
+
+/* Default: hide everywhere */
+#home-trigger {
+  display: none;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+/* Show only on mobile */
+@media (max-width: 991.98px) {
+  #home-trigger {
+    display: inline-flex;
+    align-items: center;
+  }
+}
