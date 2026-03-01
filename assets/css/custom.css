@@ -111,6 +111,12 @@ a.post-preview:has(i.fa-thumbtack) {
   }
 }
 
+/* Padding for home icon on mobile */
+@media (max-width: 768px) {
+  #topbar a[aria-label="Home"] {
+    padding-right: 1.5rem;
+  }
+}
 /* Disable search on mobile */
 @media (max-width: 768px) {
   #search-trigger {
