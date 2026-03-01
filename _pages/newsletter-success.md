@@ -1,5 +1,5 @@
 ---
-title: Newsletter – gotowe
+title: Newsletter – Gotowe
 permalink: /newsletter-confirmed/
 layout: page
 sitemap: false
