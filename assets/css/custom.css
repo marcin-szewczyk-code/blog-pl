@@ -102,3 +102,11 @@ a.post-preview:has(i.fa-thumbtack) {
     overflow-x: hidden;
   }
 }
+
+/* MPS: Topbar – add left padding on mobile (Newsletter icon too close) */
+@media (max-width: 991.98px) {
+  /* safest: shift whole topbar content slightly from the left edge */
+  #topbar {
+    padding-left: 1rem !important;
+  }
+}
