@@ -8,7 +8,7 @@ robots: noindex, nofollow
 
 
 > Status: subskrypcja aktywna
-{: .prompt-info }
+{: .prompt-tip }
 
 Adres e-mail został poprawnie zweryfikowany.  
 Subskrypcja newslettera jest aktywna.
