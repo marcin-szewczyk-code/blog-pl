@@ -70,15 +70,17 @@ a.post-preview:has(i.fa-thumbtack) {
 
 /* Default: hide everywhere */
 #home-trigger {
-  display: none;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
+  display: none !important;
 }
 
 /* Show only on mobile */
 @media (max-width: 991.98px) {
   #home-trigger {
-    display: inline-flex;
+    display: inline-flex !important;
     align-items: center;
   }
 }
+
+
