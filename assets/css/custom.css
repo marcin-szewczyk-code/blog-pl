@@ -86,13 +86,17 @@ a.post-preview:has(i.fa-thumbtack) {
 /* Mobile topbar cleanup */
 @media (max-width: 991.98px) {
   /* Hide text labels (e.g. NEWSLETTER, RSS) and keep only icons */
+/*
   nav[aria-label="Breadcrumb"] a span {
     display: none;
   }
+*/
   /* Remove icon-text spacing to prevent horizontal overflow */
+/*
   nav[aria-label="Breadcrumb"] a {
     gap: 0 !important;
   }
+*/
   /* Optional: prevent tiny horizontal scroll on mobile */
   html, body {
     overflow-x: hidden;
