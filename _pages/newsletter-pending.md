@@ -9,8 +9,6 @@ robots: noindex, nofollow
 > Status: oczekiwanie na potwierdzenie adresu e-mail
 {: .prompt-info }
 
-Zapis został przyjęty.
-
 Na podany adres e-mail wysłano wiadomość z linkiem aktywacyjnym.  
 
 Aby aktywować subskrypcję, otwórz wiadomość i kliknij link potwierdzający.
