@@ -110,3 +110,10 @@ a.post-preview:has(i.fa-thumbtack) {
     padding-left: 1rem !important;
   }
 }
+
+/* Disable search on mobile */
+@media (max-width: 768px) {
+  #search-trigger {
+    display: none !important;
+  }
+}
