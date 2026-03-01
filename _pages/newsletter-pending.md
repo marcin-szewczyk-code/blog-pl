@@ -6,7 +6,8 @@ sitemap: false
 robots: noindex, nofollow
 ---
 
-## Status: oczekiwanie na potwierdzenie e-mail
+> Status: oczekiwanie na potwierdzenie e-mail
+{: .prompt-info }
 
 Zapis został przyjęty:
 - Na podany adres e-mail wysłano wiadomość z linkiem aktywacyjnym.  
