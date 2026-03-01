@@ -64,7 +64,7 @@ footer:
   theme: Motyw
   copyrights: Wszelkie prawa zastrzeżone
 
-meta: "Generator: :PLATFORM · Motyw: :THEME · Licencja: :COPYRIGHT · Analityka: :PRIVACY"
+meta: "Generator:&nbsp;:PLATFORM · Motyw:&nbsp;:THEME · Licencja:&nbsp;:COPYRIGHT · Analityka:&nbsp;:PRIVACY"
 
 
 #meta:
