@@ -1,25 +1,20 @@
 ---
-title: Newsletter – potwierdzenie
+title: Newsletter – Oczekiwanie na potwierdzenie
 permalink: /newsletter-confirmation/
 layout: page
 sitemap: false
 robots: noindex, nofollow
 ---
 
-> Status: oczekiwanie na potwierdzenie e-mail
+> Status: oczekiwanie na potwierdzenie adresu e-mail
 {: .prompt-info }
 
-Zapis został przyjęty:
-- Na podany adres e-mail wysłano wiadomość z linkiem aktywacyjnym.  
-- Otwórz wiadomość i kliknij link potwierdzający.
+Zapis został przyjęty.
 
-Jeżeli w ciągu kilku minut e-mail nie dotrze:
-- sprawdź folder **SPAM**
-- sprawdź zakładkę **Oferty** (Gmail)
-- wyszukaj wiadomość potwierdzającą
+Na podany adres e-mail wysłano wiadomość z linkiem aktywacyjnym.  
 
-Subskrypcja nie zostanie aktywowana bez potwierdzenia.
+Aby aktywować subskrypcję, otwórz wiadomość i kliknij link potwierdzający.
 
-> Newsletter zawiera wyłącznie powiadomienia o nowych wpisach na blogu.
-> W każdej chwili możesz zrezygnować z subskrypcji, korzystając z linku w stopce wiadomości.
-{: .prompt-tip }
+Jeżeli e-mail nie dotrze w ciągu kilku minut, sprawdź folder **SPAM** lub zakładkę **Oferty**.
+
+W każdej chwili możesz zrezygnować z subskrypcji, korzystając z linku w stopce wiadomości.
