@@ -1,5 +1,5 @@
 ---
-title: "Tools: Generowanie miniatur PDF do bloga (Poppler + ImageMagick)"
+title: "Narzędzia: Generowanie miniatur PDF do bloga (Poppler + ImageMagick)"
 description: "Konwersja PDF do PNG przy użyciu Poppler (pdftoppm) oraz stylizacja obrazu w ImageMagick w celu generowania miniatur do bloga."
 date: 2026-02-22 07:00:00 +0100
 categories: [Narzędzia]
