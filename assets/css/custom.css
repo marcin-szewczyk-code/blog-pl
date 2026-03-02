@@ -103,11 +103,9 @@ a.post-preview:has(i.fa-thumbtack) {
   }
 }
 
-/* Disable search on mobile */
-/*
+/* Disable search on mobile (nie mieści się) */
 @media (max-width: 768px) {
   #search-trigger {
     display: none !important;
   }
 }
-*/
