@@ -68,21 +68,6 @@ a.post-preview:has(i.fa-thumbtack) {
    MPS: Show Home icon only on mobile
    ========================================================================== */
 
-/* Default: hide everywhere */
-#home-trigger {
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-  display: none !important;
-}
-
-/* Show only on mobile */
-@media (max-width: 991.98px) {
-  #home-trigger {
-    display: inline-flex !important;
-    align-items: center;
-  }
-}
-
 /* Mobile topbar cleanup */
 @media (max-width: 991.98px) {
   /* Hide text labels (e.g. NEWSLETTER, RSS) and keep only icons */
@@ -117,9 +102,12 @@ a.post-preview:has(i.fa-thumbtack) {
     padding-right: 1.5rem;
   }
 }
+
 /* Disable search on mobile */
+/*
 @media (max-width: 768px) {
   #search-trigger {
     display: none !important;
   }
 }
+*/
