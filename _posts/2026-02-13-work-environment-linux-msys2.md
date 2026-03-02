@@ -2,7 +2,7 @@
 title: "Środowisko: Linux pod Windows – MSYS2, MinGW i gcc"
 description: "Minimalne środowisko linuxowe pod Windows oparte na MSYS2 i MinGW64: instalacja gcc, biblioteki GMP oraz ImageMagick wraz z przykładową kompilacją programu w C."
 date: 2026-02-13 07:00:00 +0100
-categories: [Environment]
+categories: [Środowisko]
 tags: [linux, environment, setup, msys2]
 ---
 

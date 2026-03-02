@@ -2,7 +2,7 @@
 title: "Środowisko: Jekyll – konfiguracja narzędzi (VS Code, Git, SSH, Ruby)"
 description: "Konfiguracja środowiska pracy dla bloga Jekyll: VS Code, Git, SSH, Ruby (DevKit) oraz lokalne uruchamianie serwera."
 date: 2026-03-02 07:00:00 +0100
-categories: [Environment]
+categories: [Środowisko]
 tags: [jekyll, git, github, ssh, ruby]
 ---
 
