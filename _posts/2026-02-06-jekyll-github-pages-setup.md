@@ -26,6 +26,11 @@ Opisana tu konfiguracja typu *User Page* jest poprawna, domyślna i w pełni wys
 
 W moim przypadku zmieniła się na konfigurację typu *Project Page* po wprowadzeniu dwóch wersji językowych bloga (PL \| EN). Obie wersje zostały wówczas zrealizowane jako dwie odrębne strony typu *Project Page* o identycznej architekturze -- opisuję to w osobnym wpisie.
 
+Jekyll to:
+- generator statycznych stron
+- czyta Markdown
+- generuje HTML
+
 ### Repo na GitHubie
 
 Czego potrzebujemy na początek i jak to wyglądało u mnie (stan z momentu tworzenia bloga, przed wprowadzeniem wersji dwujęzycznej)::
