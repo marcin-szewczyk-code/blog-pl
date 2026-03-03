@@ -15,9 +15,9 @@ Blog powstaje z markdowna, wypychanego do gita z poziomu VS Code. Jest statyczny
 
 Ten blog to miejsce na moje notatki o kodach, matematyce i symulacjach.
 
-Najłatwiej przejrzeć zawartość bloga przez sekcje [Kategorie](/categories/) lub [Archiwum](/archives/).
+Najłatwiej przejrzeć zawartość przez sekcje [Kategorie](/categories/) lub [Archiwum](/archives/).
 
-Blog umożliwia [Subskrypcję RSS](/rss/), ma dwie wersje językowe ([PL](https://blog.marcinszewczyk.net/) \| [EN](https://en.blog.marcinszewczyk.net/)) i przełącznik motywu (jasny/ciemny) w nagłówku.
+Blog umożliwia [Subskrypcję RSS](/rss/), ma dwie wersje językowe ([PL](https://blog.marcinszewczyk.net/) \| [EN](https://en.blog.marcinszewczyk.net/)) i przełącznik motywu (jasny/ciemny) w nagłówku. Jest też [NEWSLETTER](/newsletter/) z powiadomieniami o nowych wpisach.
 
 Informacje o mnie znajdują się w sekcji [O mnie](/about/).
 
