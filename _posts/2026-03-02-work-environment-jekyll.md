@@ -169,7 +169,7 @@ Uruchamia to lokalne serwery deweloperskie Jekyll (tryb development).
 
 ---
 
-## Efekt końcowy
+## Podsumowanie
 
 Efekt końcowy konfiguracji:
 

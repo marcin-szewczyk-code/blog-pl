@@ -24,11 +24,11 @@ W przykładzie używam Ubuntu, ale opisana procedura dotyczy dowolnego obrazu in
 
 ---
 
-# Instalacja Ubuntu na zewnętrznym SSD (ISO + Rufus)
+## Instalacja Ubuntu na zewnętrznym SSD (ISO + Rufus)
 
 Poniżej opis instalacji bez modyfikacji systemu hosta.
 
-## 1. Pobranie obrazu ISO
+### 1. Pobranie obrazu ISO
 
 Pobieramy obraz Ubuntu Desktop:
 
@@ -42,7 +42,7 @@ Wybieramy binaria dla architektury procesora (np. x86_64 dla typowego PC).
 
 ---
 
-## 2. Uruchomienie Rufusa
+### 2. Uruchomienie Rufusa
 
 Rufus to przenośne narzędzie Windows (instalacja nie jest wymagana) do tworzenia bootowalnych nośników USB z obrazu ISO.
 
@@ -50,7 +50,7 @@ Strona projektu: [https://rufus.ie/](https://rufus.ie/)
 
 ---
 
-## 3. Utworzenie pendrive instalacyjnego
+### 3. Utworzenie pendrive instalacyjnego
 
 W Rufusie:
 
@@ -63,7 +63,7 @@ Tworzymy bootowalny pendrive instalacyjny.
 
 ---
 
-## 4. Uruchomienie instalatora
+### 4. Uruchomienie instalatora
 
 Restartujemy komputer i wchodzimy do:
 
@@ -76,7 +76,7 @@ Uruchamiamy instalator Ubuntu.
 
 ---
 
-## 5. Instalacja na zewnętrznym SSD
+### 5. Instalacja na zewnętrznym SSD
 
 Najważniejszy etap.
 
@@ -97,7 +97,7 @@ W trybie ręcznego partycjonowania należy upewnić się, że partycje systemowe
 
 ---
 
-# Partycja vs SSD vs pendrive
+## Partycja vs SSD vs pendrive
 
 Zewnętrznym nośnikiem może być:
 
@@ -119,7 +119,7 @@ Do prac developerskich i embedded najbardziej elastyczne rozwiązanie to zewnęt
 
 ---
 
-# Uwaga dodatkowa
+## Uwaga dodatkowa
 
 Jako element workflow utrzymania Windows (backup, obrazy systemu), można w analogiczny sposób przygotować nośnik instalacyjny Windows, umożliwiający odtworzenie systemu od zera.
 
@@ -127,7 +127,7 @@ Pozwala to okresowo „wyczyścić” system bez utraty danych – oczywiście p
 
 ---
 
-# Podsumowanie
+## Podsumowanie
 
 Można łatwo zainstalować system Linux (np. Ubuntu) na zewnętrznym SSD z obrazu ISO przez Rufusa.
 
