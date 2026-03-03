@@ -5,10 +5,9 @@ permalink: /newsletter/
 layout: page
 ---
 
+Powiadomienia o nowych wpisach na blogu.
 
 Newsletter umożliwia otrzymywanie aktualizacji w sposób niezależny od zewnętrznych platform.
-
-Powiadomienia są wysyłane każdorazowo po opublikowaniu nowego artykułu.
 
 <!-- tutaj wklej kod embed z MailerLite -->
 <div class="ml-embedded" data-form="cY1WRm"></div>
