@@ -1,19 +1,19 @@
 ---
-title: "Blog po 25 wpisach – kierunki rozwoju"
-description: "Checkpoint: trzy osie rozwoju bloga – symulacje inżynierskie, workflow publikacyjny oraz systemy embedded i architektury rozproszone."
+title: "Kierunki rozwoju bloga – checkpoint po 25 wpisach"
+description: "Trzy osie rozwoju bloga – workflow publikacyjny, symulacje inżynierskie oraz systemy embedded i architektury rozproszone."
 date: 2026-03-05 07:00:00 +0100
 categories: [Blog Jekyll]
 tags: [roadmapa, symulacje, embedded, iot]
 pin: true
 ---
 
-Po 25 wpisach zarysowały się trzy osie tematyczne tego bloga:
+Po opublikowaniu 25 wpisów zarysowały się trzy osie tematyczne tego bloga:
 
 🔸 Publikacje techniczne i workflow blogowy. Markdown jako źródło, Ruby jako warstwa przetwarzania, Pandoc jako konwerter, LaTeX jako warstwa składu. Projektowanie własnego systemu publikacyjnego – bez ograniczeń, swobodnie, autorsko.
 
 🔸 Symulacje w oprogramowaniu inżynierskim (SolidWorks, ANSYS, COMSOL, PSCAD, EMTP). To trzon symulacyjny, który chciałbym tu rozwijać.
 
-🔸 Ewolucja w kierunku systemów embedded i architektur rozproszonych. Od statycznych generatorów stron (Jekyll na GitHub Pages) w stronę systemów embedded (STM32, ESP32) z warstwą backendową (PHP, SQL) oraz rozproszonych architektur IoT (ARM CM4).
+🔸 Ewolucja w kierunku systemów embedded i architektur rozproszonych. Od statycznych generatorów stron (Jekyll na GitHub Pages) w stronę systemów embedded (STM32, ESP32) z warstwą backendową (PHP, SQL) oraz rozproszonych architektur IoT (ARM CM4) z analityką danych (Grafana Labs).
 
 Od czasu do czasu mogę umieszczać tu również krótkie notatki matematyczne i fragmenty kodu – w duchu uszczęśliwiania programistów (Y. Matsumoto)[^1].
 
