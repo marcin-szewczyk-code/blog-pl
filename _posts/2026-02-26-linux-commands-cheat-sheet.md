@@ -1,8 +1,8 @@
 ---
-title: "Unix: Polecenia powłoki – Cheat Sheet (ściąga)"
-description: "Cheat sheet najczęściej używanych poleceń Uniksa z przykładami pracy ze strumieniami i potokami."
+title: "Linux: Polecenia powłoki – Cheat Sheet (ściąga)"
+description: "Cheat sheet najczęściej używanych poleceń Uniksa i Linuksa z przykładami pracy ze strumieniami i potokami."
 date: 2026-02-26 07:00:00 +0100
-categories: [Unix]
+categories: [Linux]
 tags: [unix, shell, commands, cheat-sheet, pipes]
 ---
 
@@ -10,7 +10,7 @@ W tym wpisie przedstawiam mój cheat sheet najczęściej używanych poleceń Uni
 
 ---
 
-## Kilka słów o Uniksie
+## Kilka słów o Uniksie i Linuksie
 
 Unix zbudowany jest z jądra (*kernel*) oraz przestrzeni użytkownika (*user space*). Jądro zarządza zasobami systemu (procesami, pamięcią, systemem plików i urządzeniami) oraz udostępnia programom interfejs wywołań systemowych (*system calls*). Za pomocą *system calls* programy żądają od jądra wykonania określonych operacji systemowych, takich jak `read()`, `write()`, `fork()` czy `exec()`.
 

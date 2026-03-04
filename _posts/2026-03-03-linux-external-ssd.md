@@ -2,7 +2,7 @@
 title: "Linux: Instalacja Ubuntu na zewnętrznym SSD z obrazu ISO (Rufus)"
 description: "Jak zainstalować Ubuntu na zewnętrznym SSD przy użyciu obrazu ISO i narzędzia Rufus, bez modyfikacji systemu hosta."
 date: 2026-03-03 07:00:00 +0100
-categories: [Środowisko]
+categories: [Linux]
 tags: [linux, ubuntu, rufus, external-ssd, bootable-usb]
 ---
 
