@@ -112,6 +112,9 @@ Po instalacji uruchomiłem:
 ridk install
 ```
 
+![Instalacja Ruby pod Windows](/assets/posts/work-environment-jekyll/ruby-installer.png)
+***Rys. 1.** Instalacja Ruby pod Windows.*
+
 Narzędzie ```ridk install``` instaluje więc środowisko MSYS2 oraz toolchain (gcc, make), wymagane do kompilacji gemów z rozszerzeniami natywnymi.
 
 Sprawdzenie:
@@ -119,9 +122,6 @@ Sprawdzenie:
 ``` bash
 ruby -v
 ```
-
-![Instalacja Ruby pod Windows](/assets/posts/work-environment-jekyll/ruby-installer.png)
-***Rys. 1.** Instalacja Ruby pod Windows.*
 
 ---
 
