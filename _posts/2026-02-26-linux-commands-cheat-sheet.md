@@ -3,7 +3,7 @@ title: "Linux: Polecenia powłoki – Cheat Sheet (ściąga)"
 description: "Cheat sheet najczęściej używanych poleceń Uniksa i Linuksa z przykładami pracy ze strumieniami i potokami."
 date: 2026-02-26 07:00:00 +0100
 categories: [Linux]
-tags: [unix, shell, commands, cheat-sheet, pipes]
+tags: [linux, shell, commands, cheat-sheet]
 ---
 
 W tym wpisie przedstawiam mój cheat sheet najczęściej używanych poleceń Uniksa. Wykonany w ciekawym szablonie LaTeX, co pewnie też w przyszłości opiszę.
