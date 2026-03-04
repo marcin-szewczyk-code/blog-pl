@@ -120,6 +120,9 @@ Sprawdzenie:
 ruby -v
 ```
 
+![Instalacja Ruby pod Windows](/assets/posts/work-environment-jekyll/ruby-installer.png)
+***Rys. 1.** Instalacja Ruby pod Windows.*
+
 ---
 
 ## 5. Instalacja zależności projektu (blog-pl)
