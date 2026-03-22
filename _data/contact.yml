@@ -3,26 +3,31 @@
 - type: website
   icon: fas fa-globe
   url: https://marcinszewczyk.net
+  noblank: true
 
 - type: linkedin
   icon: fab fa-linkedin
   url: https://www.linkedin.com/in/marcin-szewczyk/
   label: LinkedIn
+  noblank: true
 
 - type: website
   icon: fab fa-github
   url: https://github.com/marcin-szewczyk-code
   label: GitHub
+  noblank: true
   
 - type: orcid
   icon: fas fa-id-card
   url: https://orcid.org/0000-0003-3699-5559
   label: ORCID
+  noblank: true
 
 - type: website
   icon: fas fa-landmark
   url: https://www.ee.pw.edu.pl/~szewczyk/
   label: Faculty page
+  noblank: true
 
 #- type: custom
 #  icon: fas fa-language
