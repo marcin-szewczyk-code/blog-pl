@@ -46,3 +46,6 @@ assets/js/dist
 *.idx
 *.ind
 *.ilg
+
+# MATLAB autosave files
+*.asv
