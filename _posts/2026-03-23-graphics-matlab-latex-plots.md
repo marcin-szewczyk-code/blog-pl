@@ -16,7 +16,7 @@ Realizuję to poprzez kodowanie:
 
 Pozwala to uzyskać wysoką jakość grafiki z wykorzystaniem zapisu matematycznego i skryptowania.
 
-W tym wpisie pokazuję przykład zawierający na jednym rysunku wszystkie najważniejsze elementy.
+W tym wpisie pokazuję przykład wykresu w MATLAB-ie, zawierający na jednym rysunku wszystkie najważniejsze elementy.
 
 Osobnym tematem są nieco bardziej złożone rysunki: układy wielowykresowe (funkcja `subplot`), insety, podwójne osie (lewa i prawa oś Y) oraz bardziej zaawansowane formatowanie. Opiszę je w osobnych wpisach.
 
