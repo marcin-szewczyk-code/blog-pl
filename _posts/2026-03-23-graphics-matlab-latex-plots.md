@@ -6,7 +6,7 @@ categories: [Grafika, MATLAB]
 tags: [matlab, latex, plots, tikz]
 ---
 
-Dla grafików tworzenie grafiki jest naturalne, natomiast dla programistów stanowi odrębne wyzwanie.
+Dla grafików tworzenie grafiki jest naturalne, natomiast dla osób zajmujących się obliczeniami i modelowaniem stanowi odrębne wyzwanie.
 
 Realizuję to poprzez kodowanie:
 
