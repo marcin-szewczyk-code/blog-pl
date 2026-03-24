@@ -14,7 +14,7 @@ Realizuję to poprzez kodowanie:
 - stosuję interpreter LaTeX, żeby uzyskać skład tekstu spójny z resztą dokumentu,
 - rysunki tworzę w TikZ (pakiet LaTeX do rysowania m.in. schematów elektrycznych i blokowych).
 
-Pozwala to uzyskać wysoką jakość grafiki z wykorzystaniem zapisu matematycznego i skryptowania.
+Pozwala to uzyskać wysoką jakość grafik z wykorzystaniem zapisu matematycznego i skryptowania.
 
 W tym wpisie pokazuję przykład wykresu w MATLAB-ie, zawierający na jednym rysunku wszystkie najważniejsze elementy. Przykłady w Pythonie i TikZ opiszę osobno.
 
