@@ -45,7 +45,7 @@ Pliki wykorzystane w przykładzie:
 
 ## Kod MATLAB
 
-Minimalny przykład wykresu zawierający najważniejsze elementy: przebieg, obwiednię, opisy osi, legendę.
+Przykład wykresu zawierający najważniejsze elementy: przebieg, obwiednię, opisy osi, legendę.
 
 Kluczowe ustawienie: interpreter LaTeX jako domyślny dla wszystkich elementów tekstowych.
 
