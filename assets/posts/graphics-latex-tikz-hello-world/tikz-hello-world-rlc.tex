@@ -1,0 +1,88 @@
+% File: tikz-hello-world-rlc.tex
+% Author: Marcin Szewczyk
+
+% Standalone document for compiling a single TikZ figure
+\documentclass{article}
+
+\usepackage[left=0.5cm,right=0.5cm,top=2.5cm,bottom=2.5cm]{geometry}
+
+% Circuitikz with American symbols, European resistor style, straight voltage arrows
+\usepackage[american,europeanresistors,RPvoltages,straightvoltages]{circuitikz}
+
+\ctikzset{
+	bipoles/thickness=1,   % Line thickness of circuit elements
+	label distance=1.4    % Distance of labels from elements
+}
+
+% Global font size for all TikZ nodes and labels
+\tikzset{font=\large}
+
+% Default arrow tip style (used for current and voltage arrows)
+\tikzset{>={Latex[length=5pt,width=5pt]}}
+
+\ctikzset{
+	voltage shift=2, % większy odstęp od elementów
+	label distance=5  % <-- zwiększa odstęp podpisu elementu od elementu
+}
+
+\newlength{\figsep}
+\setlength{\figsep}{26pt}
+
+\begin{document}
+	
+	% Main circuit drawing environment
+	% scale controls overall figure size
+	% line width sets thickness of wires and elements
+
+\begin{figure}[ht]
+	\centering
+	\begin{circuitikz}[scale=0.7,line width=1pt]
+
+		\input{./figures/rlc-1.tikz}
+
+	\end{circuitikz}
+	\begin{circuitikz}[scale=0.7,line width=1pt]
+	
+	\input{./figures/rlc-2.tikz}
+	
+\end{circuitikz}
+	\caption{Circuitikz example: same circuit generated from two different code variants}
+\end{figure}
+
+\vspace{\figsep}
+
+\begin{figure}[ht]
+	\centering
+	\begin{circuitikz}[scale=0.7,line width=1pt]
+		
+		\newif\ifshowgrid
+		\newif\ifshownodes
+		
+		\showgridfalse
+		\shownodestrue
+		
+		\input{./figures/rlc-3.tikz}
+		
+	\end{circuitikz}
+	\caption{Circuitikz example with nodes}
+\end{figure}
+
+\vspace{\figsep}
+	
+\begin{figure}[ht]
+	\centering
+	\begin{circuitikz}[scale=0.7,line width=1pt]
+		
+		\newif\ifshowgrid
+		\newif\ifshownodes
+		
+		\showgridtrue
+		\shownodestrue
+		
+		\input{./figures/rlc-3.tikz}
+		
+	\end{circuitikz}
+	\caption{Circuitikz example with nodes and grid}
+\end{figure}
+	
+\end{document}

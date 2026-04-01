@@ -1,0 +1,10 @@
+\draw
+(0,0) to[isource, l=$e(t)$] (0,4)
+-- (1.5,4)
+to[L, l=$L$, v_<=$u_\mathrm{L}(t)$] (3.5,4)
+-- (4.5,4)
+to[R, l=$R$, v_<=$u_\mathrm{R}(t)$] (6.3,4)
+-- (7.3,4)
+to[closing switch, l=$S$, bipoles/length=2cm] (9.3,4)
+to[short, i>^=$i(t)$] (11.1,4)
+-- (11.1,0) -- (0,0);

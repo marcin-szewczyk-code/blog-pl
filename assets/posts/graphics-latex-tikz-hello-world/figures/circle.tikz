@@ -1,0 +1,16 @@
+% circle
+\draw (0,0) circle (1);
+
+% center
+\fill (0,0) circle (1.5pt) node[below left] {$O$};
+
+% radius
+\draw[->] (0,0) -- (1,0) node[midway, below] {$r$};
+
+% extension lines
+\draw (-1,0) -- (-1,1.4);
+\draw (1,0) -- (1,1.4);
+
+% diameter (dimension line)
+\draw[<->] (-1,1.4) -- (1,1.4)
+node[midway, above] {$d=2r$};
