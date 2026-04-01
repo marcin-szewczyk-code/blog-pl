@@ -14,3 +14,8 @@
 *.png binary
 *.jpg binary
 *.ico binary
+
+# Enforce LF line endings for text sources (Markdown, LaTeX, TikZ)
+*.md   text eol=lf
+*.tex  text eol=lf
+*.tikz text eol=lf
