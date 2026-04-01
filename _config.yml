@@ -15,7 +15,7 @@
 url: "https://blog.marcinszewczyk.net"
 baseurl: ""
 
-future: true
+future: false
 
 lastmod: false
 
