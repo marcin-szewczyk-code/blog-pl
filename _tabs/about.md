@@ -4,6 +4,14 @@ icon: fas fa-info-circle
 order: 4
 ---
 
+> **Więcej informacji o mnie**
+>
+> - Strona główna: [https://marcinszewczyk.net](https://marcinszewczyk.net)
+> - Wersja angielska bloga: [https://en.blog.marcinszewczyk.net](https://en.blog.marcinszewczyk.net)
+{: .prompt-info }
+
+---
+
 Zacząłem bawić się Internetem jakieś 30 lat temu, w pierwszej polskiej domenie: ```fuw.edu.pl```, czyli w miejscu, gdzie powstawał polski Internet. Ciekawie było tam wtedy być.
 
 Potem trochę bawiłem się stronami statycznymi i dynamicznymi -- najpierw trochę na ```fuw.edu.pl```, potem bardziej na ```ee.pw.edu.pl```. Strony statyczne robiłem w ```HTML```, a dynamiczne w ```C++```, i wysyłałem je do przeglądarki przez ```CGI```. Później przepisywałem je w ```PHP``` i dokładałem ```CSS``` oraz ```JS```. Ciekawy był też ```LaTeX```.
@@ -18,10 +26,3 @@ Możliwe, że będę tu umieszczał kolejne wpisy w wolnych chwilach.
 
 ---
 
-> **Więcej informacji o mnie**
->
-> - Strona główna: [https://marcinszewczyk.net](https://marcinszewczyk.net)
-> - Wersja angielska bloga: [https://en.blog.marcinszewczyk.net](https://en.blog.marcinszewczyk.net)
-{: .prompt-info }
-
----

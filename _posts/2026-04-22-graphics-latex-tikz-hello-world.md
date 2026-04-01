@@ -14,20 +14,18 @@ Definiowanie rysunków tekstowo przy użyciu składni TikZ daje kilka przydatnyc
 - spójność rysunku z dokumentem (np. czcionki)
 - możliwość łatwych modyfikacji w przyszłości (wyszukuję dany fragment, zmieniam, kompiluję).
 
-Poniżej pokazuję (prawie) najprostszy przykład: okrąg i obwód LCR.
+Poniżej pokazuję (prawie) najprostszy przykład, zakończony rysunkiem:
 
 ![Przykładowy rysunek TikZ z widoczną siatką i węzłami](/assets/posts/graphics-latex-tikz-hello-world/figures/rlc-3.png)
-***Rys. 1.** Przykładowy rysunek z widoczną siatką i węzłami.*
+***Rys. 1.** Przykładowy rysunek TikZ z widoczną siatką i węzłami.*
 
 ---
 
 ## Minimalny przykład -- okrąg (Hello World)
 
-TikZ działa bezpośrednio w LaTeX.
+TikZ działa bezpośrednio w LaTeX, a rysunek to fragment kodu w środowisku `tikzpicture`.
 
-Rysunek to fragment kodu w środowisku `tikzpicture`.
-
-Rysunek:
+Przykładowy rysunek okręgu z zaznaczonym środkiem, promieniem i średnicą:
 
 <img src="/assets/posts/graphics-latex-tikz-hello-world/figures/circle.png" width="200">
 ***Rys. 2.** Przykładowy rysunek Tikz -- okrąg.*
@@ -51,9 +49,7 @@ Kod:
 \end{tikzpicture}
 ```
 
----
-
-## Podstawowe elementy składni
+Podstawowe elementy składni:
 
 - `\begin{tikzpicture}` --- środowisko rysunku
 - `\draw` --- rysowanie
@@ -66,11 +62,11 @@ Kod:
 
 ## Minimalny przykład -- obwód RLC
 
-Poniżej pokażę kod TikZ rysunku obwodu w trzech wariantach składni: od najprostszej do najbardziej złożonej.
+Poniżej pokazuję kod TikZ rysunku obwodu w trzech wariantach składni: od najprostszej do najbardziej złożonej.
 
 ### Wariant 1
 
-Rysunek:
+Rysunek, który powstaje z super-prostego kodu, ale w którym nie podoba mi się niewyrównanie strzałek w poziomie:
 
 ![Przykładowy rysunek Tikz -- obwód LCR, bez siatki i węzłów](/assets/posts/graphics-latex-tikz-hello-world/figures/rlc-1.png)
 ***Rys. 3.** Przykładowy rysunek Tikz -- obwód LCR, bez siatki i węzłów.*
@@ -94,7 +90,7 @@ Kod:
 
 ### Wariant 2
 
-Rysunek identyczny jak wyżej.
+Rysunek identyczny jak wyżej, tylko inny sposób zadawania współrzędnych węzłów (przesunięcia względem poprzednich).
 
 Kod:
 
@@ -115,7 +111,7 @@ Kod:
 
 ### Wariant 3
 
-Rysunek:
+Docelowy rysunek. Kod nieco spuchł, ale jest w nim wszystko co potrzeba na początek. Potem można swobodnie rozbudowywać w miarę potrzeb pojawiających się przy konkretnych rysunkach.
 
 ![Przykładowy rysunek Tikz -- obwód LCR, z siatką i węzłami](/assets/posts/graphics-latex-tikz-hello-world/figures/rlc-3.png)
 ***Rys. 4.** Przykładowy rysunek Tikz -- obwód LCR, z siatką i węzłami.*
@@ -207,7 +203,7 @@ Kod:
 
 ## Podsumowanie
 
-TikZ jest prosty, skryptowy, daje możliwość edycji i modyfikacji rysunków w środowisku LaTeX.
+TikZ jest prosty, skryptowy, a więc daje możliwość edycji i modyfikacji rysunków w środowisku LaTeX.
 
 W kolejnym wpisie pokazuję praktyczny workflow:
 
