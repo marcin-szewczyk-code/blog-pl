@@ -1,0 +1,38 @@
+% File: tikz2pdf.tex
+% Author: Marcin Szewczyk
+% Purpose: generate a standalone PDF figure from TikZ code
+% Use:
+%   1. Compile tikz2pdf.tex -> tikz2pdf.pdf
+%   2. Run: pdfcrop tikz2pdf.pdf tikz2pdf-crop.pdf
+%   3. Compile tikz2pdf-usage.tex to use the cropped PDF output
+
+% Standalone document for compiling a single TikZ figure
+\documentclass[tikz,border=2pt]{standalone}
+
+% Circuitikz with American symbols, European resistor style, straight voltage arrows
+\usepackage[american,europeanresistors,RPvoltages,straightvoltages]{circuitikz}
+
+\ctikzset{
+	bipoles/thickness=1,   % Line thickness of circuit elements
+	label distance=1.4    % Distance of labels from elements
+}
+
+% Global font size for all TikZ nodes and labels
+\tikzset{font=\large}
+
+% Default arrow tip style (used for current and voltage arrows)
+\tikzset{>={Latex[length=5pt,width=5pt]}}
+
+\begin{document}
+	
+	% Main circuit drawing environment
+	% scale controls overall figure size
+	% line width sets thickness of wires and elements
+	\begin{circuitikz}[scale=0.7,line width=1pt]
+		
+		% External file containing the actual circuit definition
+		\input{./figures/example.tikz}
+		
+	\end{circuitikz}
+	
+\end{document}

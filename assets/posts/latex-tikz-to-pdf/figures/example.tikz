@@ -1,0 +1,95 @@
+% --- Debug switches ---
+% Enable or disable auxiliary drawing elements (grid and nodes)
+
+\newif\ifshowgrid   % Controls visibility of the background grid
+\newif\ifshownodes  % Controls visibility of debug nodes and labels
+
+\showgridfalse       % Set to \showgridfalse to hide the grid
+\shownodestrue      % Set to \shownodesfalse to hide debug markers and labels
+
+% Debug grid to assist with manual layout alignment
+\ifshowgrid
+	\draw [help lines] (-2,-2) grid (17,6);
+\fi
+
+% --- Point definitions ---
+\coordinate (n0) at (0,0);
+\coordinate (n1) at (0,4);
+\coordinate (n2) at (1,4);
+\coordinate (n3) at (4,4);
+\coordinate (n4) at (5,4);
+\coordinate (n5) at (8,4);
+\coordinate (n6) at (12,4);
+\coordinate (n7) at (12.5,4);
+
+% Transformer center aligned with the midpoint between n0 and n1, shifted right
+\coordinate (n8) at ($(n0)!0.5!(n1)+(14,0)$);
+
+% Consistent style for debug labels
+\tikzset{
+	debug label/.style={
+		font=\scriptsize,
+		fill=white,
+		inner sep=0pt
+	}
+}
+
+% Transformer
+\draw
+(n8) node[transformer core, scale=1.905, transform shape](T){};
+
+% --- Top branch ---
+\draw
+(T.A2) to[short, o-] (n0)
+(n0) to[isource, l=$e(t)$] (n1)
+(n1) to[short, -] (n2)
+(n2) to[L=$L$] (n3)
+(n3) to[short, -, i=$i(t)$] (n4)
+(n4) to[/tikz/circuitikz/bipoles/length=2.5cm, closing switch=$W$] (n5)
+(n5) to[R=$R$, -o] (n6)
+(n6) to[short, -] (n7)
+;
+
+% --- Manually drawn voltage arrows ---
+% NOTE: Voltage arrows are drawn manually to control length and alignment
+
+% u_L
+\draw[->]
+($(n2)!0.78!(n3)+(0,-0.65)$) --
+($(n2)!0.22!(n3)+(0,-0.65)$)
+node[midway, below=5pt, fill=white, inner sep=0pt] {$u_\mathrm{L}(t)$};
+
+% u_R
+\draw[->]
+($(n5)!0.78!(n6)+(0,-0.65)$) --
+($(n5)!0.22!(n6)+(0,-0.65)$)
+node[midway, below=5pt, fill=white, inner sep=0pt] {$u_\mathrm{R}(t)$};
+
+% u_T
+\draw[->]
+($(T.A1)!0.78!(T.A2)+(0.0,0)$) --
+($(T.A1)!0.22!(T.A2)+(0.0,0)$)
+node[midway, left=5pt, fill=white, inner sep=0pt] {$u_\mathrm{T}(t)$};
+
+% --- Debug: point names ---
+\ifshownodes
+	\foreach \p in {n1,n2,n5,n6,n7}{
+		\fill[red] (\p) circle (2pt);
+		\node[above=5pt, debug label] at (\p) {\p};
+	}
+	\foreach \p in {n0,n3,n4}{
+		\fill[red] (\p) circle (2pt);
+		\node[below=5pt, debug label] at (\p) {\p};
+	}
+	\fill[red] (n8) circle (2pt);
+	\node[below=30pt, debug label] at (n8) {\scriptsize n8};
+\fi
+% --- Remaining transformer-side elements ---
+\draw
+(T.B1) to[open, o-] ++ (0,0)
+(T.B2) to[open, o-] ++ (0,0)
+(T.A1) to[open] (T.A2)
+;
+
+% Transformer label
+\node[align=left, fill=white, inner sep=0pt] at (T.north) {$T$\\$\psi(i)$\\};

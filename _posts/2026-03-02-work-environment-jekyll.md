@@ -32,6 +32,14 @@ Podczas instalacji wybrałem:
 - ✔ **Override the default branch name: main**
 - ✔ **Git from the command line and also from 3rd-party software**
 - ✔ **Use bundled OpenSSH**
+- ✔ **Use the native Windows Secure Channel library**
+- ✔ **Checkout Windows-style, commit Unix-style line endings**
+- ✔ **Use the native Windows Secure Channel library (Schannel)**
+- ✔ **Checkout Windows-style, commit Unix-style line endings**
+- ✔ **Use MinTTY (the default terminal of MSYS2)**
+- ✔ **Fast-forward or merge**
+- ✔ **Git Credential Manager**
+- ✔ **Enable file system caching** ❌ **Enable symbolic links**
 
 Po instalacji konfiguracja tożsamości:
 
@@ -70,14 +78,14 @@ gdzie ```%USERPROFILE%``` oznacza katalog domowy bieżącego użytkownika (home 
 
 ### Dodanie klucza do GitHub
 
-1.  GitHub → Settings\
-2.  SSH and GPG keys\
-3.  New SSH key\
-4.  Title: np. `Lenovo-X250-2026`\
-5.  Wklejenie klucza\
+1.  GitHub → Settings
+2.  SSH and GPG keys
+3.  New SSH key
+4.  Title: np. `Lenovo-X250-2026`
+5.  Wklejenie klucza prywatnego (zawartość `%USERPROFILE%\.ssh\id_ed25519.pub`)
 6.  Add SSH key
 
-Test połączenia:
+Test połączenia (potwierdzenie przez `yes`, następnie podaj hasło, jeśli będzie wymagane):
 
 ``` bash
 ssh -T git@github.com
@@ -140,8 +148,8 @@ bundle install
 
 To instaluje:
 
-- Bundler\
-- wszystkie gemy z `Gemfile`\
+- Bundler
+- wszystkie gemy z `Gemfile`
 - w tym Jekyll i używany motyw (np. Chirpy)
 
 Pakiety (biblioteki) w Ruby dystrybuowane są jako gems (klejnoty).
