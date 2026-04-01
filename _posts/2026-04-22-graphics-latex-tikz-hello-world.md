@@ -116,6 +116,11 @@ Docelowy rysunek. Kod nieco spuchł, ale jest w nim wszystko co potrzeba na pocz
 ![Przykładowy rysunek Tikz -- obwód LCR, z siatką i węzłami](/assets/posts/graphics-latex-tikz-hello-world/figures/rlc-3.png)
 ***Rys. 4.** Przykładowy rysunek Tikz -- obwód LCR, z siatką i węzłami.*
 
+Siatkę i węzły można oczywiście wyłączyć, uzyskując rysunek docelowy:
+
+![Przykładowy rysunek Tikz -- obwód LCR, docelowy](/assets/posts/graphics-latex-tikz-hello-world/figures/rlc-3.png)
+***Rys. 5.** Przykładowy rysunek Tikz -- obwód LCR, docelowy.*
+
 Kod:
 
 ```latex

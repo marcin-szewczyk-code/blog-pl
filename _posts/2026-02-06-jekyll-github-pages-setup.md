@@ -102,6 +102,28 @@ Blog działa teraz lokalnie pod adresem: [http://127.0.0.1:4000/](http://127.0.0
 
 Zmiany w plikach są widoczne na bieżąco. Nie wszystkich, ale kluczowych, tj. wpisów. Zmiana `_config.yml` wymaga restartu Jekylla.
 
+Przydatne jest uruchomienie Jekylla z opcją `--future`:
+
+```bash
+bundle exec jekyll serve --future
+```
+
+Dzięki temu można w pliku `_config.yml` ustawić `future: false` (czyli ukryć wpisy przed ich datą publikacji), a jednocześnie widzieć je lokalnie.
+
+Jekylla można również uruchomić na innym porcie:
+
+```bash
+bundle exec jekyll serve --port 4001
+```
+
+Wtedy strona będzie dostępna pod adresem:
+
+```bash
+http://localhost:4001
+```
+
+Umożliwia to jednoczesne uruchomienie kilku lokalnych instancji, np. `blog-pl` i `blog-en`.
+
 ### Wypchnięcie na Gita (commit & push)
 
 Pozostaje `commit` i wypchnięcie `push` na GitHuba:

@@ -1,5 +1,5 @@
 ---
-title: "Grafika: Rysunki TikZ w LaTeX – PDF z kodu TikZ do osadzania w LaTeX"
+title: "Grafika: Rysunki TikZ – PDF z kodu TikZ do osadzania w LaTeX"
 description: "Jak kompilować rysunki TikZ do osobnych plików PDF, przycinać je narzędziem pdfcrop i włączać do dokumentu LaTeX jako gotowe grafiki."
 date: 2026-04-23 07:00:00 +0100
 categories: [Grafika]

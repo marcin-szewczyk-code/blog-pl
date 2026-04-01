@@ -4,13 +4,11 @@ icon: fas fa-info-circle
 order: 4
 ---
 
-> **Więcej informacji o mnie**
+> **Linki**
 >
 > - Strona główna: [https://marcinszewczyk.net](https://marcinszewczyk.net)
 > - Wersja angielska bloga: [https://en.blog.marcinszewczyk.net](https://en.blog.marcinszewczyk.net)
 {: .prompt-info }
-
----
 
 Zacząłem bawić się Internetem jakieś 30 lat temu, w pierwszej polskiej domenie: ```fuw.edu.pl```, czyli w miejscu, gdzie powstawał polski Internet. Ciekawie było tam wtedy być.
 
