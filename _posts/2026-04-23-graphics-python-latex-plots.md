@@ -2,7 +2,7 @@
 title: "Grafika: Wykresy w Pythonie (Matplotlib) z formatowaniem LaTeX"
 description: "Tworzenie wykresów w Pythonie (Matplotlib) z użyciem LaTeX do opisu osi, tytułów i legend."
 author: Marcin Szewczyk
-date: 2026-04-22 07:00:00 +0100
+date: 2026-04-23 07:00:00 +0100
 categories: [Grafika, Python]
 tags: [python, latex, plots]
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Grafika: Wykresy w MATLAB-ie z formatowaniem LaTeX"
 description: "Tworzenie wykresów w MATLAB-ie z użyciem LaTeX do opisu osi, tytułów i legend."
-date: 2026-03-23 07:00:00 +0100
+date: 2026-03-22 07:00:00 +0100
 categories: [Grafika, MATLAB]
 tags: [matlab, latex, plots, tikz]
 ---

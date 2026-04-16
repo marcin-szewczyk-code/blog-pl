@@ -1,7 +1,7 @@
 ---
 title: "Grafika: TikZ w LaTeX – podstawy i pierwszy schemat (circuitikz)"
 description: "Jak tworzyć rysunki w TikZ w LaTeX: od prostego przykładu do pierwszego schematu z użyciem circuitikz."
-date: 2026-04-23 07:00:00 +0100
+date: 2026-04-24 07:00:00 +0100
 categories: [Grafika, LaTeX-TikZ]
 tags: [latex, tikz, circuitikz]
 ---

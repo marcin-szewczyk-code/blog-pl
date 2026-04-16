@@ -1,7 +1,7 @@
 ---
 title: "SolidWorks: Klocek LEGO – przykład krok po kroku"
 description: "Tworzenie modelu klocka LEGO w SolidWorks z użyciem podstawowych operacji CAD."
-date: 2026-04-25 07:00:00 +0100
+date: 2026-04-26 07:00:00 +0100
 categories: [Oprogramowanie inżynierskie, SolidWorks]
 tags: [cad]
 ---
