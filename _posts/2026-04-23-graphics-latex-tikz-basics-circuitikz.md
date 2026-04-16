@@ -1,34 +1,32 @@
 ---
-title: "Grafika: Rysunki TikZ w LaTeX – przykład Hello World (prawie minimalny)"
-description: "Minimalny przykład użycia TikZ w LaTeX: jak narysować prosty rysunek i zrozumieć podstawową składnię."
-date: 2026-04-22 07:00:00 +0100
-categories: [Grafika]
-tags: [latex, tikz, hello-world]
+title: "Grafika: TikZ w LaTeX – podstawy i pierwszy schemat (circuitikz)"
+description: "Jak tworzyć rysunki w TikZ w LaTeX: od prostego przykładu do pierwszego schematu z użyciem circuitikz."
+date: 2026-04-23 07:00:00 +0100
+categories: [Grafika, LaTeX-TikZ]
+tags: [latex, tikz, circuitikz]
 ---
 
-TikZ to pakiet LaTeX do tworzenia grafiki. Skoro działa w LaTeX, to rysunki definiowane są za pomocą kodu.
+TikZ to pakiet LaTeX do tworzenia grafiki. Rysunek jest opisany kodem, a nie wstawiany jako gotowy obraz.
 
-Definiowanie rysunków tekstowo przy użyciu składni TikZ daje kilka przydatnych rzeczy:
+Takie podejście daje dużą kontrolę nad szczegółami rysunku, spójność z dokumentem (np. czcionki) oraz możliwość łatwych modyfikacji w przyszłości (edycja kodu i ponowna kompilacja).
 
-- dużą kontrolę nad szczegółami rysunku,
-- spójność rysunku z dokumentem (np. czcionki)
-- możliwość łatwych modyfikacji w przyszłości (wyszukuję dany fragment, zmieniam, kompiluję).
+W tym wpisie pokazuję podstawy TikZ: od prostego przykładu do pierwszego schematu elektrycznego w `circuitikz`.
 
-Poniżej pokazuję (prawie) najprostszy przykład, zakończony rysunkiem:
+Docelowy rysunek omawiany w tym wpisie:
 
-![Przykładowy rysunek TikZ z widoczną siatką i węzłami](/assets/posts/graphics-latex-tikz-hello-world/figures/rlc-3.png)
+![Przykładowy rysunek TikZ z widoczną siatką i węzłami](/assets/posts/graphics-latex-tikz-basics-circuitikz/figures/rlc-3.png)
 ***Rys. 1.** Przykładowy rysunek TikZ z widoczną siatką i węzłami.*
 
 ---
 
-## Minimalny przykład -- okrąg (Hello World)
+## Minimalny przykład -- okrąg
 
-TikZ działa bezpośrednio w LaTeX, a rysunek to fragment kodu w środowisku `tikzpicture`.
+Rysunek TikZ to fragment kodu w środowisku `tikzpicture`.
 
 Przykładowy rysunek okręgu z zaznaczonym środkiem, promieniem i średnicą:
 
-<img src="/assets/posts/graphics-latex-tikz-hello-world/figures/circle.png" width="200">
-***Rys. 2.** Przykładowy rysunek Tikz -- okrąg.*
+<img src="/assets/posts/graphics-latex-tikz-basics-circuitikz/figures/circle.png" width="200">
+***Rys. 2.** Przykładowy rysunek TikZ -- okrąg.*
 
 Kod:
 
@@ -51,25 +49,25 @@ Kod:
 
 Podstawowe elementy składni:
 
-- `\begin{tikzpicture}` --- środowisko rysunku
-- `\draw` --- rysowanie
-- `(x,y)` --- współrzędne
-- `--` --- linia
-- `node` --- opis
-- `[->]`, `[<->]` --- strzałki
+- `\begin{tikzpicture}` – środowisko rysunku
+- `\draw` – rysowanie
+- `(x,y)` – współrzędne
+- `--` – odcinek
+- `node` – opis
+- `[->]`, `[<->]` – strzałki
 
 ---
 
-## Minimalny przykład -- obwód RLC
+## Schemat RLC w TikZ (circuitikz)
 
-Poniżej pokazuję kod TikZ rysunku obwodu w trzech wariantach składni: od najprostszej do najbardziej złożonej.
+Poniżej ten sam schemat RLC w trzech wariantach: od najprostszego do bardziej rozbudowanego.
 
 ### Wariant 1
 
-Rysunek, który powstaje z super-prostego kodu, ale w którym nie podoba mi się niewyrównanie strzałek w poziomie:
+Najprostszy wariant. Rysunek powstaje z krótkiego kodu, ale strzałki nie są wyrównane w poziomie.
 
-![Przykładowy rysunek Tikz -- obwód LCR, bez siatki i węzłów](/assets/posts/graphics-latex-tikz-hello-world/figures/rlc-1.png)
-***Rys. 3.** Przykładowy rysunek Tikz -- obwód LCR, bez siatki i węzłów.*
+![Przykładowy rysunek Tikz -- obwód RLC, bez siatki i węzłów](/assets/posts/graphics-latex-tikz-basics-circuitikz/figures/rlc-1.png)
+***Rys. 3.** Przykładowy rysunek Tikz -- obwód RLC, bez siatki i węzłów.*
 
 Kod:
 
@@ -90,7 +88,7 @@ Kod:
 
 ### Wariant 2
 
-Rysunek identyczny jak wyżej, tylko inny sposób zadawania współrzędnych węzłów (przesunięcia względem poprzednich).
+Wariant identyczny jak powyżej, pokazujący zapis z użyciem przesunięć względnych (`++`).
 
 Kod:
 
@@ -111,15 +109,15 @@ Kod:
 
 ### Wariant 3
 
-Docelowy rysunek. Kod nieco spuchł, ale jest w nim wszystko co potrzeba na początek. Potem można swobodnie rozbudowywać w miarę potrzeb pojawiających się przy konkretnych rysunkach.
+Docelowy wariant. Kod jest bardziej rozbudowany, ale daje pełną kontrolę nad układem rysunku. Strzałki są wyrównane.
 
-![Przykładowy rysunek Tikz -- obwód LCR, z siatką i węzłami](/assets/posts/graphics-latex-tikz-hello-world/figures/rlc-3.png)
-***Rys. 4.** Przykładowy rysunek Tikz -- obwód LCR, z siatką i węzłami.*
+![Przykładowy rysunek Tikz -- obwód RLC, z siatką i węzłami](/assets/posts/graphics-latex-tikz-basics-circuitikz/figures/rlc-3.png)
+***Rys. 4.** Przykładowy rysunek Tikz -- obwód RLC, z siatką i węzłami.*
 
 Siatkę i węzły można oczywiście wyłączyć, uzyskując rysunek docelowy:
 
-![Przykładowy rysunek Tikz -- obwód LCR, docelowy](/assets/posts/graphics-latex-tikz-hello-world/figures/rlc-3.png)
-***Rys. 5.** Przykładowy rysunek Tikz -- obwód LCR, docelowy.*
+![Przykładowy rysunek Tikz -- obwód RLC, docelowy](/assets/posts/graphics-latex-tikz-basics-circuitikz/figures/rlc-4.png)
+***Rys. 5.** Przykładowy rysunek Tikz -- obwód RLC, docelowy.*
 
 Kod:
 
@@ -177,8 +175,8 @@ Kod:
 	% --- Manually drawn voltage arrows ---
 	% NOTE: Voltage arrows are drawn manually to control length and alignment
 	
-	% --- ustaw długość strzałki ---
-	\def\varrow{1.6}  % całkowita długość
+	% --- arrow length ---
+	\def\varrow{1.6}  % total length
 		
 	% u_L
 	\draw[<-]
@@ -208,8 +206,6 @@ Kod:
 
 ## Podsumowanie
 
-TikZ jest prosty, skryptowy, a więc daje możliwość edycji i modyfikacji rysunków w środowisku LaTeX.
+TikZ pozwala tworzyć rysunki bezpośrednio w LaTeX jako kod, co daje pełną kontrolę nad ich strukturą i wyglądem oraz umożliwia łatwe modyfikacje.
 
-W kolejnym wpisie pokazuję praktyczny workflow:
-
-👉 generowanie rysunków TikZ jako osobnych plików PDF i włączanie ich do dokumentu LaTeX.
+Podstawy można szybko opanować na prostych przykładach, a następnie przejść do bardziej złożonych rysunków, takich jak schematy w `circuitikz`.

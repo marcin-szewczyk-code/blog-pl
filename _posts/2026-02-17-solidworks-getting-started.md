@@ -35,10 +35,10 @@ Kursy dedykowane do przygotowania do certyfikacji są tutaj:
 
 Po zainstalowaniu i uruchomieniu SolidWorks pojawia się główne okno programu z panelem startowym. Warto rozpocząć naukę od samouczków, klikając przycisk widoczny na rysunku.
 
-![SolidWorks – pierwsze uruchomienie](/assets/posts/solidworks-getting-started/solidworks-panel-startowy.png)
+![SolidWorks – pierwsze uruchomienie](/assets/posts/solidworks-getting-started/solidworks-start-panel.png)
 ***Rys. 2.** SolidWorks – panel startowy.*
 
-![SolidWorks – pierwsze uruchomienie](/assets/posts/solidworks-getting-started/solidworks-okno-glowne.png)
+![SolidWorks – pierwsze uruchomienie](/assets/posts/solidworks-getting-started/solidworks-main-window.png)
 ***Rys. 3.** SolidWorks – główne okno po pierwszym uruchomieniu.*
 
 ## Certyfikacja (CSWA)
@@ -64,3 +64,10 @@ Następnie można przejść do bezpośredniego przygotowania do egzaminu CSWA (e
 Po uruchomieniu aplikacji i utworzeniu konta wyświetlana jest lista egzaminów dostępnych dla użytkownika, np. „CSWA – Sample Exam”.
 
 Bezpłatny egzamin próbny można zdawać raz na 30 dni.
+
+
+> **Licencja**
+>
+> Utworzono z wykorzystaniem licencji udostępnionej przez [DPS Software](https://dps-software.pl/).
+{: .prompt-info }
+
