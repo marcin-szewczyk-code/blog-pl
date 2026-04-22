@@ -25,7 +25,7 @@ Rysunek TikZ to fragment kodu w środowisku `tikzpicture`.
 
 Przykładowy rysunek okręgu z zaznaczonym środkiem, promieniem i średnicą:
 
-<img src="/assets/posts/graphics-latex-tikz-basics-circuitikz/figures/circle.png" width="200">
+<img src="/assets/posts/graphics-latex-tikz-basics-circuitikz/figures/circle.png" alt="Przykładowy rysunek TikZ" (okrąg) width="200">
 ***Rys. 2.** Przykładowy rysunek TikZ -- okrąg.*
 
 Kod:
